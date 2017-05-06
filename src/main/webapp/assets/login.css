@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+
+.form-login {
+	background-image: url(mdl/images/newlogo.png);
+	background-repeat: no-repeat;
+	background-position: 35% 5%;
+	margin: 5% 0% 5% 12%;
+}

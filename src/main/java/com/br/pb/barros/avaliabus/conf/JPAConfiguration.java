@@ -36,12 +36,23 @@ public class JPAConfiguration {
 	@Bean public DataSource dataSource(Environment environment) {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
+		
+		dataSource.setUrl("mysql://avaliabus:3306/");
 		dataSource.setUsername("root");
-		dataSource.setPassword("");
+		dataSource.setPassword("uKrwbCEXNFtJ1gAo");
+		
+		/*dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
+		dataSource.setUsername("root");
+		dataSource.setPassword("");*/
+		
 		return dataSource;
 	}
-
+	
+/*  Username: root
+	Password: uKrwbCEXNFtJ1gAo
+	Database Name: avaliabus
+Connection URL: mysql://avaliabus:3306/
+*/
 	@Bean public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
 		JpaTransactionManager transactionManager = new JpaTransactionManager();
 		transactionManager.setEntityManagerFactory(emf);

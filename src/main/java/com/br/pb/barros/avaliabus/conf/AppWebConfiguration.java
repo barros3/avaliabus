@@ -47,7 +47,7 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
 		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		driverManagerDataSource.setUrl("jdbc:mysql://mysql:3306/sampledb");
-		driverManagerDataSource.setUsername("root");
+		driverManagerDataSource.setUsername("goku");
 		driverManagerDataSource.setPassword("uKrwbCEXNFtJ1gAo");
 		
 		/*driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/avaliabus");

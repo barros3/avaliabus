@@ -39,9 +39,9 @@ public class JPAConfiguration {
 		dataSource.setUrl("jdbc:mysql://mysql.avaliabus.svc:3306/sampledb");
 		dataSource.setUsername("goku");
 		dataSource.setPassword("uKrwbCEXNFtJ1gAo");
-//		dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
-//		dataSource.setUsername("root");
-//		dataSource.setPassword("");
+		/*dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
+		dataSource.setUsername("root");
+		dataSource.setPassword("");*/
 		
 		return dataSource;
 	}

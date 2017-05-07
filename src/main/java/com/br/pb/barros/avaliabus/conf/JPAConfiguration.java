@@ -36,7 +36,7 @@ public class JPAConfiguration {
 	@Bean public DataSource dataSource(Environment environment) {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("mysql://avaliabus:3306/");
+		dataSource.setUrl("mysql://avaliabus:3306/sampledb");
 		dataSource.setUsername("root");
 		dataSource.setPassword("uKrwbCEXNFtJ1gAo");
 		

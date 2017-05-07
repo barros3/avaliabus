@@ -36,7 +36,7 @@ public class JPAConfiguration {
 	@Bean public DataSource dataSource(Environment environment) {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://avaliabus:3306/sampledb");
+		dataSource.setUrl("mysql://avaliabus:3306/sampledb");
 		dataSource.setUsername("root");
 		dataSource.setPassword("uKrwbCEXNFtJ1gAo");
 		/*dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
@@ -63,7 +63,7 @@ Connection URL: mysql://avaliabus:3306/
 
 	Properties additionalProperties() {
 		Properties properties = new Properties();
-		properties.setProperty("hibernate.hbm2ddl.auto", "create");
+		properties.setProperty("hibernate.hbm2ddl.auto", "update");
 		properties.setProperty("hibernate.show_sql", "true");
 		properties.setProperty("hibernate.dialect", "org.hibernate.dialect.MySQLDialect");
 		return properties;

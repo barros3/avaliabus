@@ -2,7 +2,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template" %>
 
-<base href="https://avaliabus.herokuapp.com/avaliabus/" />
+<base href="https://avaliabus.herokuapp.com/" />
 
 <template:admin>
   <div>

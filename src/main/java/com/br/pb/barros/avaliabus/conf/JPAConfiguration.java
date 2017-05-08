@@ -5,6 +5,7 @@ import java.util.Properties;
 import javax.persistence.EntityManagerFactory;
 import javax.sql.DataSource;
 
+import org.hibernate.annotations.OnDelete;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.env.Environment;
@@ -36,12 +37,18 @@ public class JPAConfiguration {
 	@Bean public DataSource dataSource(Environment environment) {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-		dataSource.setUrl("jdbc:mysql://mysql:3306/sampledb");
+		
+		/*dataSource.setUrl("jdbc:mysql://mysql:3306/sampledb");
 		dataSource.setUsername("goku");
-		dataSource.setPassword("uKrwbCEXNFtJ1gAo");
+		dataSource.setPassword("uKrwbCEXNFtJ1gAo");*/
+		
 		/*dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
 		dataSource.setUsername("root");
 		dataSource.setPassword("");*/
+		
+		dataSource.setUrl("jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10173254");
+		dataSource.setUsername("sql10173254");
+		dataSource.setPassword("CGGvPue8s2");
 		
 		return dataSource;
 	}

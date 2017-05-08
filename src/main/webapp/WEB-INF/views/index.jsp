@@ -7,12 +7,12 @@
 	<div class="android-customized-section">
 		<div class="mdl-grid">
 			<div class="mdl-typography--text-center mdl-cell mdl-cell-1-col" style="0% 0% 0% -10%">
-				<img alt="logo" src="assets/mdl/images/newlogo.png">
+				<img alt="logo" src="http://avaliabus.herokuapp.com/assets/mdl/images/newlogo.png">
 			</div>
 			<div class="mdl-cell mdl-cel--8-col">
 				<div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">AvaliaBUS</div>
 				<p class="mdl-typography--font-light">
-					Sistema de Avaliação da qualizdade dos serviços prestados pelas
+					Sistema de Avaliação da qualidade dos serviços prestados pelas
 					empresas de concessão de Transporte Coletivo em João Pessoa - PB. <br>
 					<a href="" class="android-link mdl-typography--font-light">Baixe
 						no Playstore</a>
@@ -77,7 +77,7 @@ window.onclick = function(event) {
 		<div class="android-card-container mdl-grid" style="text-align: justify;">
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="assets/mdl/images/frequencia.png">
+					<img src="http://avaliabus.herokuapp.com/assets/mdl/images/frequencia.png">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Avaliação</h4>
@@ -91,7 +91,7 @@ window.onclick = function(event) {
 				</div>
 				<div class="mdl-card__actions">
 					<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="avaliacao/form">AVALIE<i class="material-icons">chevron_right</i>
+						href="http://avaliabus.herokuapp.com/avaliacao/form">AVALIE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
@@ -99,7 +99,7 @@ window.onclick = function(event) {
 			<div
 				class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="assets/mdl/images/denuncia.png">
+					<img src="http://avaliabus.herokuapp.com/assets/mdl/images/denuncia.png">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Denúncia</h4>
@@ -114,14 +114,14 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
+						href="http://avaliabus.herokuapp.com/denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
 
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="assets/mdl/images/sugestao.png">
+					<img src="http://avaliabus.herokuapp/assets/mdl/images/sugestao.png">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Sugestão</h4>
@@ -135,14 +135,14 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
+						href="http://avaliabus.herokuapp.com/sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
 
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="assets/mdl/images/resultados.jpeg">
+					<img src="http://avaliabus.herokuapp.com/assets/mdl/images/resultados.jpeg">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Resultados</h4>
@@ -156,7 +156,7 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
+						href="http://avaliabus.herokuapp.com/resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>

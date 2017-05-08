@@ -18,10 +18,12 @@ public class AvaliaBusFilter implements Filter {
 
 		servResponse.setHeader("Access-Control-Allow-Origin", "*");
 		servResponse.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE");
+		servResponse.setHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
 		servResponse.setHeader("Access-Control-Max-Age", "3600");
 		servResponse.setHeader("Access-Control-Allow-Headers", "x-requested-with");
 		servResponse.setHeader("Content-Security-Policy", "script-src ");
 		servResponse.setHeader("Content-Security-Policy", "script-src https://localhost:8443/avaliabus/");
+		servResponse.setHeader("Content-Security-Policy", "script-src http://avaliabus.herokuapp.com/");
 		servResponse.setHeader("Content-Security-Policy", "script-src http://localhost:8080/avaliabus/");
 		servResponse.setHeader("Content-Security-Policy", "script-src https://facebook.com/");
 		servResponse.setHeader("Content-Security-Policy", "script-src https://code.getmdl.io/1.2.1/material.min.js");

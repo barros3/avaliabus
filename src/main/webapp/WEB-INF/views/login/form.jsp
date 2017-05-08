@@ -13,7 +13,7 @@
 
 		$.ajax({
 			type : "get",
-			url : "/avaliabus/usuario/check-email",
+			url : "/usuario/check-email",
 			data : {
 				email : _email
 			},
@@ -49,7 +49,7 @@
 
 		$.ajax({
 			type : "get",
-			url : "/avaliabus/home/check-login",
+			url : "/home/check-login",
 			contentType : "application/json",
 			data : {
 				login : _login

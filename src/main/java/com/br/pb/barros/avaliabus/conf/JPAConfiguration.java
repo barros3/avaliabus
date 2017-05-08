@@ -46,7 +46,7 @@ public class JPAConfiguration {
 		dataSource.setUsername("root");
 		dataSource.setPassword("");*/
 		
-		dataSource.setUrl("jdbc:sql10173254://sql10.freemysqlhosting.net:3306/");
+		dataSource.setUrl("jdbc:mysql://sql10.freemysqlhosting.net:3306/sql10173254");
 		dataSource.setUsername("sql10173254");
 		dataSource.setPassword("CGGvPue8s2");
 		

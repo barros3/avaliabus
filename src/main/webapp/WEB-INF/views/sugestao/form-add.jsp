@@ -2,7 +2,7 @@
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
 
-<base href="http://localhost:8080/avaliabus/" />
+<base href="https://avaliabus.herokuapp.com/avaliabus/" />
 
 <template:admin>
 	<div class="mdl-grid" style="background-color: rgb(0, 126, 255);">

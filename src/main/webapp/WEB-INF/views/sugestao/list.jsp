@@ -6,7 +6,7 @@
 
 <script src="<c:url value='/assets/js/jquery.jqpagination.js'/>"></script>
 
-<base href="http://localhost:8080/avaliabus/" />
+<base href="https://avaliabus.herokuapp.com/avaliabus/" />
 
 <template:admin>
 	<div class="mdl-grid">

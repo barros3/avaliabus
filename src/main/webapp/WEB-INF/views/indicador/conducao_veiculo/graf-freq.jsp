@@ -3,7 +3,7 @@
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 
-<base href="http://localhost:8080/avaliabus/" />
+<base href="https://avaliabus.herokuapp.com/avaliabus/" />
 
 <template:admin>
 	<div class="mdl-grid">

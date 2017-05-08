@@ -77,14 +77,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     .sessionRegistry(sessionRegistry());
 	
 	http
-//		.authorizeRequests().antMatchers("/home/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**").permitAll()
-//	.and()
-//		.authorizeRequests().antMatchers("/denuncia/**", "/avaliacao/**", "/sugestao/**").hasAnyAuthority("USER", "ADMIN_MASTER")
-//	.and()
-//		.authorizeRequests().antMatchers("/**", "/usuario/**").hasAnyAuthority("ADMIN_MASTER").anyRequest().authenticated()
+		.authorizeRequests().antMatchers("/home/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**").permitAll()
+	.and()
+		.authorizeRequests().antMatchers("/denuncia/**", "/avaliacao/**", "/sugestao/**").hasAnyAuthority("USER", "ADMIN_MASTER")
+	.and()
+		.authorizeRequests().antMatchers("/**", "/usuario/**").hasAnyAuthority("ADMIN_MASTER").anyRequest().authenticated()
 //	.and() // CONFIGURACAO HTTPS://
 //		.requiresChannel().anyRequest().requiresSecure()
-		.authorizeRequests().antMatchers("/**", "/usuario/**").permitAll()
+//		.authorizeRequests().antMatchers("/**", "/usuario/**").permitAll()
 	.and()
     	.formLogin()
 	  	.loginProcessingUrl("/")

@@ -21,7 +21,8 @@
     <!-- bootstrap -->
 	<link rel="stylesheet" href="<c:url value='/assets/css/bootstrap.css'/>">
     
-    <base href="http://localhost:8080/avaliabus/" />
+<!--     <base href="http://localhost:8080/avaliabus/" /> -->
+<base href="http://avaliabus.herokuapp.com/" />
     
     
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>

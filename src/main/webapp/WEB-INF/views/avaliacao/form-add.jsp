@@ -3,6 +3,7 @@
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
 
 <base href="https://avaliabus.herokuapp.com/" />
+<!-- <base href="http://localhost:8080/avaliabus/" />  -->
 
 <template:admin>
 	<div class="mdl-grid" style="background-color: rgb(52, 197, 54);">

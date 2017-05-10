@@ -8,7 +8,7 @@
 	function selectLinha() {
 		$.ajax({
 			type : "get",
-			url : "/avaliabus/avaliacao/add",
+			url : "avaliacao/add",
 			data : 'tipoNomeEmpresa=' + $("#tipoNomeEmpresa").val(),
 			contentType: "application/json; charset=utf-8",
 			success : function(response) {

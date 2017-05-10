@@ -10,7 +10,7 @@
 	function selectLinha() {
 		$.ajax({
 			type : "get",
-			url : "/avaliabus/denuncia/add",
+			url : "denuncia/add",
 			data : 'tipoNomeEmpresa=' + $("#tipoNomeEmpresa").val(),
 			contentType: "application/json; charset=utf-8",
 			success : function(response) {

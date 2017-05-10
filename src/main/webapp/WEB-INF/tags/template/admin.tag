@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.min.css">
      <!-- custom login -->
-    <link rel="stylesheet" href="<c:url value='assets/login.css'/>">
+    <link rel="stylesheet" href="assets/login.css">
     <link rel="stylesheet" href="<c:url value='assets/customStyle.css'/>">
     <!-- mdl -->
     <link rel="stylesheet" href="<c:url value='assets/mdl/styles.css'/>">
@@ -31,7 +31,7 @@
 	<script src="<c:url value='/assets/newlayout/js/vendor/materialize/materialize.min.js'/>"></script>
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="http://avaliabus.herokuapp.com/assests/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="assests/materialize/js/materialize.min.js"></script>
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">

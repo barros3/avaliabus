@@ -175,7 +175,7 @@ a img{
   height: 800px;
   width: auto;
   background-color: #f3f3f3;
-  background: url('http://avaliabus.herokuapp.com/images/slide01.jpg') center 30% no-repeat;
+  background: url('images/slide01.jpg') center 30% no-repeat;
   background-size: cover;
 }
 
@@ -302,7 +302,7 @@ a img{
 
 .android-wear-section {
   position: relative;
-  background: url('http://avaliabus.herokuapp.com/images/wear.png') center top no-repeat;
+  background: url('images/wear.png') center top no-repeat;
   background-size: cover;
   height: 800px;
 }
@@ -373,7 +373,7 @@ a img{
   }
 
 .android-customized-section-image {
-  background: url('http://avaliabus.herokuapp.com/images/lotacao.jpg') center top no-repeat;
+  background: url('images/lotacao.jpg') center top no-repeat;
   background-size: cover;
   height: 400px;
   opacity: 0.5;
@@ -381,7 +381,7 @@ a img{
 }
 
 .custom-resultados {
-  background: url('http://avaliabus.herokuapp.com/images/lotacao_.jpg') center top no-repeat;
+  background: url('images/lotacao_.jpg') center top no-repeat;
   background-size: cover;
   height: 200px;
   opacity: 0.5;
@@ -552,7 +552,7 @@ a img{
   }
   
   .botao {
-	 background: url('http://avaliabus.herokuapp.com/assets/mdl/images/face.png') center top no-repeat !important;
+	 background: url('images/face.png') center top no-repeat !important;
 	}
 	
 }

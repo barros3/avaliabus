@@ -236,7 +236,7 @@
 			<div class="mdl-card__actions">
 				<a
 					class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-					href="/avaliabus/empresa/indicadores/sao-jorge">Acesse<i class="material-icons">chevron_right</i>
+					href="empresa/indicadores/sao-jorge">Acesse<i class="material-icons">chevron_right</i>
 				</a>
 			</div>
 		</div>
@@ -255,7 +255,7 @@
 			<div class="mdl-card__actions">
 				<a
 					class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-					href="/avaliabus/empresa/indicadores/reunidas">Acesse<i class="material-icons">chevron_right</i>
+					href="empresa/indicadores/reunidas">Acesse<i class="material-icons">chevron_right</i>
 				</a>
 			</div>
 		</div>
@@ -285,7 +285,7 @@
 		$
 		.ajax({
 			type : "post",
-			url : "/resultados/graf-modulo",
+			url : "resultados/graf-modulo",
 			contentType : "application/json; charset=utf-8",
 			success : function(response) {
 				var data = google.visualization.arrayToDataTable([

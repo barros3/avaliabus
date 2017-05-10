@@ -20,7 +20,7 @@ public class AvaliaBusFilter implements Filter {
 		servResponse.setHeader("Access-Control-Allow-Methods", "POST, GET, PUT, OPTIONS, DELETE");
 		servResponse.setHeader("Access-Control-Allow-Headers", "Content-Type, Accept");
 		servResponse.setHeader("Access-Control-Max-Age", "3600");
-		servResponse.setHeader("Access-Control-Allow-Headers", "x-requested-with");
+		servResponse.setHeader("Access-Control-Allow-Headers", "content-type, Accept, Access-Control-Allow-Headers, Authorization, X-Requested-With");
 		servResponse.setHeader("Content-Security-Policy", "script-src ");
 		servResponse.setHeader("Content-Security-Policy", "script-src https://localhost:8443/avaliabus/");
 		servResponse.setHeader("Content-Security-Policy", "script-src http://avaliabus.herokuapp.com/");

@@ -19,10 +19,10 @@
     <!-- mdl -->
     <link rel="stylesheet" href="<c:url value='assets/mdl/styles.css'/>">
     <!-- bootstrap -->
-	<link rel="stylesheet" href="<c:url value='/assets/css/bootstrap.css'/>">
+	<link rel="stylesheet" href="<c:url value='assets/css/bootstrap.css'/>">
     
 <!--     <base href="http://localhost:8080/avaliabus/" /> -->
-		<base href="http://avaliabus.herokuapp.com/" />
+		<base href="http://avaliabus.herokuapp.com/" />	
     
     
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
@@ -51,12 +51,12 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="http://avaliabus.herokuapp.com/">Sobre</a>
-              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="http://avaliabus.herokuapp.com/resultados/form">Resultados</a>
-              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="http://avaliabus.herokuapp.com/avaliacao/form">Avalie sua Viagem</a>
+              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="home">Sobre</a>
+              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="resultados/form">Resultados</a>
+              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="avaliacao/form">Avalie sua Viagem</a>
 <!--               <a class="mdl-navigation__link mdl-navigation" href=""><span class="mdl-layout-title">Como funciona?</a> -->
-              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="http://avaliabus.herokuapp.com/sugestao/form">Sugestão</a>
-              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="http://avaliabus.herokuapp.com/denuncia/form">Denuncie</a>
+              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="sugestao/form">Sugestão</a>
+              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="denuncia/form">Denuncie</a>
             </nav>
           </div>
           
@@ -73,7 +73,7 @@
 <%-- 			<li><a href="<c:url value='sugestao/form'/>" class="mdl-menu__item" style="text-decoration:none;">Sugestão</a></li> --%>
 			
 			<c:if test="${isLogado == true}" var="isLogado">
-				<li><a href="<c:url value='http://avaliabus.herokuapp.com/logout'/>" class="mdl-menu__item" style="text-decoration:none;">Sair</a></li>
+				<li><a href="<c:url value='logout'/>" class="mdl-menu__item" style="text-decoration:none;">Sair</a></li>
 			</c:if>
 			</ul>
         </div>
@@ -88,13 +88,13 @@
         </span>
         <nav class="mdl-navigation">
   	  	<span class="mdl-navigation__link" href="">Administrador</span>
-          <a class="mdl-navigation__link" href="<c:url value='http://avaliabus.herokuapp.com//usuario/form'/>" style="text-decoration:none;">Cadastrar Usuário</a>
-          <a class="mdl-navigation__link" href="<c:url value='http://avaliabus.herokuapp.com//usuario/'/>" style="text-decoration:none;">Listar Usuário</a>
+          <a class="mdl-navigation__link" href="<c:url value='usuario/form'/>" style="text-decoration:none;">Cadastrar Usuário</a>
+          <a class="mdl-navigation__link" href="<c:url value='usuario/'/>" style="text-decoration:none;">Listar Usuário</a>
 <%--           <a class="mdl-navigation__link" href="<c:url value='/sugestao/form'/>" style="text-decoration:none;">Sugestão</a> --%>
           <div class="android-drawer-separator"></div>
           	<span class="mdl-navigation__link" href="">EMPRESAS</span>
 <%--           	<a class="mdl-navigation__link" href="<c:url value='http://avaliabus.herokuapp.com//empresa/form'/>" style="text-decoration:none;">Cadastrar Empresas</a> --%>
-          	<a class="mdl-navigation__link" href="<c:url value='http://avaliabus.herokuapp.com//empresa/'/>" style="text-decoration:none;">Configurações de Empresas</a>
+          	<a class="mdl-navigation__link" href="<c:url value='empresa/'/>" style="text-decoration:none;">Configurações de Empresas</a>
 <!--           <div class="android-drawer-separator"></div> -->
 <!--           	<span class="mdl-navigation__link" href="">EMPRESAS</span> -->
 <%--           <a class="mdl-navigation__link" href="<c:url value='/empresa/indicadores/santa-maria'/>" style="text-decoration:none;">Santa Maria</a> --%>

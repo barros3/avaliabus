@@ -41,7 +41,7 @@
 		style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Realizar Denúncia</h1>
 			<br>
 			<p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-					Para enviar uma Denúncia do Onibus/Motorista/Cobrador/Serviço é necessário preencher os dados do transporte coletivo
+					Para enviar uma Denúncia do Ônibus/Motorista/Cobrador/Serviço é necessário preencher os dados do transporte coletivo
 					explicando a ocorrência. Lembre-se que os dados enviados não são vinculado a conta na qual vc acessa nosso sistema de Denunica. 
 			</p>
 	<div class="mdl-grid">

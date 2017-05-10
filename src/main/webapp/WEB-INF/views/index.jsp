@@ -2,12 +2,13 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
+<base href="http://avaliabus.herokuapp.com/" />	
 
 <template:admin>
 	<div class="android-customized-section">
 		<div class="mdl-grid">
 			<div class="mdl-typography--text-center mdl-cell mdl-cell-1-col" style="0% 0% 0% -10%">
-				<img alt="logo" src="http://avaliabus.herokuapp.com/assets/mdl/images/newlogo.png">
+				<img alt="logo" src="assets/mdl/images/newlogo.png">
 			</div>
 			<div class="mdl-cell mdl-cel--8-col">
 				<div class="mdl-typography--font-light mdl-typography--display-1-color-contrast">AvaliaBUS</div>
@@ -77,7 +78,7 @@ window.onclick = function(event) {
 		<div class="android-card-container mdl-grid" style="text-align: justify;">
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="http://avaliabus.herokuapp.com/assets/mdl/images/frequencia.png">
+					<img src="assets/mdl/images/frequencia.png">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Avaliação</h4>
@@ -91,7 +92,7 @@ window.onclick = function(event) {
 				</div>
 				<div class="mdl-card__actions">
 					<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="http://avaliabus.herokuapp.com/avaliacao/form">AVALIE<i class="material-icons">chevron_right</i>
+						href="avaliacao/form">AVALIE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
@@ -99,7 +100,7 @@ window.onclick = function(event) {
 			<div
 				class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="http://avaliabus.herokuapp.com/assets/mdl/images/denuncia.png">
+					<img src="assets/mdl/images/denuncia.png">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Denúncia</h4>
@@ -114,14 +115,14 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="http://avaliabus.herokuapp.com/denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
+						href="denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
 
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="http://avaliabus.herokuapp/assets/mdl/images/sugestao.png">
+					<img src="assets/mdl/images/sugestao.png">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Sugestão</h4>
@@ -135,14 +136,14 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="http://avaliabus.herokuapp.com/sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
+						href="/sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
 
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
-					<img src="http://avaliabus.herokuapp.com/assets/mdl/images/resultados.jpeg">
+					<img src="assets/mdl/images/resultados.jpeg">
 				</div>
 				<div class="mdl-card__title">
 					<h4 class="mdl-card__title-text">Resultados</h4>
@@ -156,7 +157,7 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="http://avaliabus.herokuapp.com/resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
+						href="/resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>

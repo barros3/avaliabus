@@ -5,6 +5,7 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
 <base href="https://avaliabus.herokuapp.com/" />
+<!-- <base href="http://localhost:8080/avaliabus" /> -->
 
 <script type="text/javascript">
 	function checkMail() {

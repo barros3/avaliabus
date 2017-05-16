@@ -2,7 +2,9 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
-<base href="http://avaliabus.herokuapp.com/" />	
+
+<!-- <base href="http://avaliabus.herokuapp.com/" />	 -->
+<base href="http://localhost:8080/avaliabus/" />
 
 <template:admin>
 	<div class="android-customized-section">
@@ -18,17 +20,20 @@
 					<a href="" class="android-link mdl-typography--font-light">Baixe
 						no Playstore</a>
 				</p>
-				<button type="button" class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%;">Acesse já!</button>
-				<%@include file="login/form.jsp" %>	
+		<c:if test="${not isLogado}" var="isLogado">
+					<button type="button" class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%;">Acesse já!</button>
+					<%@include file="login/form.jsp" %>	
 			</div>
 			<div class="mdl-cell mdl-cell--2-col"></div>
 		</div>
-		<c:if test="${not isLogado}" var="isLogado">
 			<div class="android-customized-section-image"></div>
 			<script type="text/javascript">
 				$('.android-more-section').attr('style','margin: -10% 0% 0% 14%');
 			
 			</script>
+		</c:if>
+		<c:if test="${not isLogado}" var="isLogado">
+			<p class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%;">Compartilhe o AvaliaBUS!</p>
 		</c:if>
 	</div>
 	<div class="android-more-section">
@@ -40,14 +45,14 @@
 <div id="myModal" class="modal">
 
   <!-- Modal content -->
-  <div class="modal-content">
+  <!-- <div class="modal-content">
     <span class="close">&times;</span>
     <p>Some text in the Modal..</p>
   </div>
 
-</div>
+</div> -->
 
-<script>
+<!-- <script>
 // Get the modal
 var modal = document.getElementById('myModal');
 
@@ -73,9 +78,9 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
-</script>
+</script> -->
 		</div>
-		<div class="android-card-container mdl-grid" style="text-align: justify;">
+		<div class="android-card-container mdl-grid" style="text-align: justify; margin: 0% 10% 0% 0%">
 			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 				<div class="mdl-card__media">
 					<img src="assets/mdl/images/frequencia.png">
@@ -136,7 +141,7 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="/sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
+						href="sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>
@@ -157,7 +162,7 @@ window.onclick = function(event) {
 				<div class="mdl-card__actions">
 					<a
 						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="/resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
+						href="resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
 					</a>
 				</div>
 			</div>

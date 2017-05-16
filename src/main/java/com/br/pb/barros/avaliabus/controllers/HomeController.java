@@ -59,6 +59,13 @@ public class HomeController {
 		return serviceUsuario.checkExistsLogin(login);
 	}
 	
+	@RequestMapping(method = RequestMethod.GET, value = "/check-email", produces = "application/json")
+	public @ResponseBody String checkEmail(@RequestParam("email") String email,
+							HttpServletRequest request, HttpServletResponse response){
+	
+		return serviceUsuario.checkEmail(email);
+	}
+	
 	@RequestMapping(value="/logout", method = RequestMethod.GET)
     public String logoutPage (HttpServletRequest request, HttpServletResponse response) {
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();

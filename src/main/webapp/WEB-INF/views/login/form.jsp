@@ -1,20 +1,24 @@
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 
-<base href="https://avaliabus.herokuapp.com/" />
-<!-- <base href="http://localhost:8080/avaliabus" /> -->
+<!-- <base href="https://avaliabus.herokuapp.com/" /> -->
+<base href="http://localhost:8080/avaliabus/" />
 
 <script type="text/javascript">
+	
+	var response_login, response_email
+	
 	function checkMail() {
 
 		var _email = $("#email").val();
 
 		$.ajax({
 			type : "get",
-			url : "/usuario/check-email",
+			url : "home/check-email",
 			data : {
 				email : _email
 			},
@@ -22,7 +26,13 @@
 			success : function(response) {
 
 				if (response.toString() === "true") {
+					
+					response_email = response.toString();
+
 					alert("Email já castrado!")
+					
+				}else{
+					
 				}
 
 			},
@@ -40,8 +50,9 @@
 
 		if (_senha != _check_senha) {
 			alert("As senhas não correspondem!")
+			return false;
 		}
-
+		return true;
 	}
 
 	function checkLogin() {
@@ -50,7 +61,7 @@
 
 		$.ajax({
 			type : "get",
-			url : "/home/check-login",
+			url : "home/check-login",
 			contentType : "application/json",
 			data : {
 				login : _login
@@ -58,7 +69,10 @@
 			success : function(response) {
 
 				if (response.toString() === "true") {
+
+					response_login = response.toString();
 					alert("Login já cadastrado!")
+					
 				}
 
 			},
@@ -70,7 +84,11 @@
 		});
 	}
 
-	function validateEmail(email) {
+	function validateEmail() {
+		if(checkMail() === 'false'){
+			return false;
+		}
+		var email = $("#email").val();
 		var chrbeforAt = email.substr(0, email.indexOf('@'));
 		if (!($.trim(email).length > 127)) {
 			if (chrbeforAt.length >= 2) {
@@ -83,6 +101,17 @@
 			return false;
 		}
 	}
+	
+	$(document).ready(function(){
+		$("#btn-cadastrar").blur('blur', function(){
+			if(response_email != "true" && response_login != "true" && checkSenha() === 'true'){
+				alert("Liberar botao -> VALIDOU")
+			}else{
+				alert("Liberar botao -> NOT VALIDOU")
+			}	
+		});
+	});
+	
 </script>
 
 <div class="mdl-grid">
@@ -101,11 +130,11 @@
 						<form:form modelAttribute="usuario" method="POST" style="text-align: center">
 							<div class="mdl-card__supporting-text">
 								<div class="mdl-textfield mdl-js-textfield">
-									<input class="mdl-textfield__input validate" name="username" id="username" type="text" /> 
+									<input class="mdl-textfield__input validate" name="username" id="username" type="text" required="required"/> 
 									<label class="mdl-textfield__label" for="username">Usuário</label>
 								</div>
 								<div class="mdl-textfield mdl-js-textfield">
-									<input class="mdl-textfield__input validate" name="password" id="password" type="password" /> 
+									<input class="mdl-textfield__input validate" name="password" id="password" type="password" required="required"/> 
 									<label class="mdl-textfield__label" for="userpass">Senha</label> 
 									<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 								</div>
@@ -253,7 +282,7 @@
 										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--6-col">
 											<label for="email" class="mdl-textfield__label">E-mail *<span></span></label>
 											<form:input id="email" path="email" class="mdl-textfield__input" type="text" 
-												pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required" onblur="checkMail(); validateEmail(this);"/>
+												pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" required="required" onblur="validateEmail(this);"/>
 										</div>
 									</div>
 									<div class="mdl-grid mdl-cell--12-col">
@@ -267,7 +296,7 @@
 										</div>
 									</div>	
 									<div class="mdl-grid mdl-cell--12-col">
-										<button type="submit" class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%; text-align: center;">Cadastrar</button>
+										<button id="btn-cadastrar" type="submit" class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%; text-align: center;" >Cadastrar</button>
 									</div>
 								</div>
 							</form:form>

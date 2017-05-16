@@ -30,18 +30,19 @@ import com.br.pb.barros.avaliabus.enuns.TipoNomeEmpresa;
 import com.br.pb.barros.avaliabus.models.Denuncia;
 import com.br.pb.barros.avaliabus.models.Empresa;
 import com.br.pb.barros.avaliabus.services.ServiceDenuncia;
+import com.br.pb.barros.avaliabus.util.AvaliaBUSSessionUTIL;
 
 @Controller
 @RequestMapping("/denuncia")
 @Transactional
 public class DenunciaController {
 
-	@Autowired
-	private DenunciaDao denunciaDao;
+	@Autowired private DenunciaDao denunciaDao;
 
-	@Autowired
-	private ServiceDenuncia denunciaService;
+	@Autowired private ServiceDenuncia denunciaService;
 
+	AvaliaBUSSessionUTIL session = new AvaliaBUSSessionUTIL();
+	
 	@InitBinder
 	public void initBinderData(WebDataBinder binder) {
 		SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -86,7 +87,10 @@ public class DenunciaController {
 			e.printStackTrace();
 		}
 
-		return new ModelAndView("redirect:/denuncia");
+		if(session.isAdminMaster()){			
+			return new ModelAndView("redirect:/denuncia");
+		}
+		return new ModelAndView("denuncia/success");
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/{id}")

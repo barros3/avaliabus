@@ -86,7 +86,7 @@ public class SugestaoController {
 		if(session.isAdminMaster()){			
 			return new ModelAndView("redirect:/avaliacao");
 		}
-		return new ModelAndView("redirect:/");
+		return new ModelAndView("sugestao/success");
 	}
 
 	@RequestMapping(method = RequestMethod.GET, value = "/{id}")

@@ -19,7 +19,7 @@
 				
 				var options = '<option value=""><-- Linha/Numero --></option>';
 				
-				$.map(obj, function(val, key) {
+				$.map(response, function(val, key) {
 					options += '<option itemValue="' + key + '" itemLabel="">'+ val + '</option>';					
 				});
 				

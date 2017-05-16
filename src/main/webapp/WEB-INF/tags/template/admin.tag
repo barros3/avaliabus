@@ -21,8 +21,8 @@
     <!-- bootstrap -->
 	<link rel="stylesheet" href="<c:url value='assets/css/bootstrap.css'/>">
     
-<!--     <base href="http://localhost:8080/avaliabus/" /> -->
-		<base href="http://avaliabus.herokuapp.com/" />	
+    <base href="http://localhost:8080/avaliabus/" />
+<!-- 		<base href="http://avaliabus.herokuapp.com/" />	 -->
     
     
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
@@ -51,7 +51,7 @@
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
-              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="home">Sobre</a>
+              <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="">Sobre</a>
               <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="resultados/form">Resultados</a>
               <a class="mdl-navigation__link mdl-navigation" style="text-decoration:none;" href="avaliacao/form">Avalie sua Viagem</a>
 <!--               <a class="mdl-navigation__link mdl-navigation" href=""><span class="mdl-layout-title">Como funciona?</a> -->

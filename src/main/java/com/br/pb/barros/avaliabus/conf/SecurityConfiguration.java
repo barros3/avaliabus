@@ -82,8 +82,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 		.authorizeRequests().antMatchers("/denuncia/**", "/avaliacao/**", "/sugestao/**").hasAnyAuthority("USER", "ADMIN_MASTER")
 	.and()
 		.authorizeRequests().antMatchers("/**", "/usuario/**").hasAnyAuthority("ADMIN_MASTER").anyRequest().authenticated()
-	.and() // CONFIGURACAO HTTPS://
-		.requiresChannel().anyRequest().requiresSecure()
+//	.and() // CONFIGURACAO HTTPS://
+//		.requiresChannel().anyRequest().requiresSecure()
 //		.authorizeRequests().antMatchers("/**", "/usuario/**").permitAll()
 	.and()
     	.formLogin()

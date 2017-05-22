@@ -20,8 +20,8 @@ public class SystemSendMail {
 
 	public void enviarEmail(String to, String corpo, String caminhoDaImagem) {
 
-		final String username = "";
-		final String password = "";
+		final String username = "avaliabusjp@gmail.com";
+		final String password = "avaliabus#123";
 
 		// Assuming you are sending email through relay.jangosmtp.net
 		String host = "smtp.gmail.com";
@@ -84,8 +84,8 @@ public class SystemSendMail {
 
 	public void enviarEmailSemImagem(String to, String corpo) {
 
-		final String username = "";
-		final String password = "";
+		final String username = "avaliabusjp@gmail.com";
+		final String password = "avaliabus#123";
 
 		// Assuming you are sending email through relay.jangosmtp.net
 		String host = "smtp.gmail.com";

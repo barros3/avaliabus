@@ -1,5 +1,9 @@
 package com.br.pb.barros.avaliabus.conf;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 import javax.inject.Inject;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +11,9 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
+import org.springframework.security.authentication.AuthenticationManager;
+import org.springframework.security.authentication.AuthenticationProvider;
+import org.springframework.security.authentication.ProviderManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.EnableGlobalAuthentication;
@@ -77,7 +84,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     .sessionRegistry(sessionRegistry());
 	
 	http
-		.authorizeRequests().antMatchers("/home/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**").permitAll()
+		.authorizeRequests().antMatchers("/home/**", "/registrar/**", "/autenticar/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**").permitAll()
 	.and()
 		.authorizeRequests().antMatchers("/denuncia/**", "/avaliacao/**", "/sugestao/**").hasAnyAuthority("USER", "ADMIN_MASTER")
 	.and()
@@ -102,8 +109,33 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     	.accessDeniedPage("/403")
 	
     .and()
-    	.csrf().disable();
-		
+    	.csrf().disable();	
+//		.exceptionHandling()
+//		.authenticationEntryPoint(restAuthenticationEntryPoint);
 	}
+	
+//	ETAPA PARA CONSTURCAO DO AUTENTICATION PROVIDER VIA REST
+	
+	/*@Bean public AvaliaBusAuthenticationProviderWEB avaliaBUSWEB(){
+		return new AvaliaBusAuthenticationProviderWEB();
+	}
+	
+	@Bean public AvaliaBUSSavedRequestAwareAuthenticationSuccessHandler avaliaBUSREST(){
+		return new AvaliaBUSSavedRequestAwareAuthenticationSuccessHandler();
+	}
+	
+	@Bean	public AuthenticationManager authenticationManager() {
+		List<AuthenticationProvider> provider = new ArrayList<AuthenticationProvider>();
+		provider.add(avaliaBUSWEB());
+		provider.add((AuthenticationManager) avaliaBUSREST());
+		
+		return (AuthenticationManager) provider;
+	}
+	
+	@Bean public AvaliaBUSSavedRequestAwareAuthenticationSuccessHandler mySuccessHandler(){
+        return new AvaliaBUSSavedRequestAwareAuthenticationSuccessHandler();
+    }
+	
+	 @Autowired private RestAuthenticationEntryPoint restAuthenticationEntryPoint;*/
 	
 }

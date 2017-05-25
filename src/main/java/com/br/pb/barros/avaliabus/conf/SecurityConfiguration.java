@@ -1,19 +1,15 @@
 package com.br.pb.barros.avaliabus.conf;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
 import javax.inject.Inject;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.annotation.Order;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.authentication.AuthenticationProvider;
-import org.springframework.security.authentication.ProviderManager;
+import org.springframework.security.authentication.RememberMeAuthenticationProvider;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
 import org.springframework.security.config.annotation.authentication.configuration.EnableGlobalAuthentication;
@@ -35,6 +31,7 @@ import com.br.pb.barros.avaliabus.daos.UsuarioSessionDao;
 @EnableWebSecurity
 @EnableGlobalAuthentication
 @ComponentScan("com.br.pb.barros.avaliabus")
+@Order(2)
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	
 	@Autowired DriverManagerDataSource dataSource;
@@ -42,6 +39,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	@Autowired AvaliaBusAuthenticationProviderWEB sibusAuthenticationProvider;
 	
 	@Autowired UsuarioSessionDao usuarioSessionDAO;
+	
+	@Autowired private AvaliaBUSTokenBasedRememberMeService tokenBasedRememberMeService;
+	
+	@Autowired private RememberMeAuthenticationProvider rememberMeAuthenticationProvider;
+	
+	 @Bean @Override public AuthenticationManager authenticationManagerBean() throws Exception {
+		 return super.authenticationManagerBean();
+	 }
 	
 	@Bean public PasswordEncoder passwordEncoder() {
 	    return new BCryptPasswordEncoder();
@@ -55,10 +60,14 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	}
 	
 	@Autowired public void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.authenticationProvider(sibusAuthenticationProvider)
+		auth
+			.authenticationProvider(sibusAuthenticationProvider)
 			.userDetailsService((UserDetailsService) usuarioSessionDAO)
 			.passwordEncoder(passwordEncoder());
+		
 		auth.jdbcAuthentication().dataSource(dataSource);
+		
+		auth.authenticationProvider(rememberMeAuthenticationProvider);
 	}
 	
 	@Override public void configure(WebSecurity web) throws Exception {
@@ -100,6 +109,8 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	  	.passwordParameter("password")
 	  	.defaultSuccessUrl("/" , true)
 	  	.failureUrl("/erro").permitAll()
+  	.and()
+  		.rememberMe().rememberMeServices(tokenBasedRememberMeService)
     .and()
     	.logout()
     	.logoutRequestMatcher(new AntPathRequestMatcher("/logout"))

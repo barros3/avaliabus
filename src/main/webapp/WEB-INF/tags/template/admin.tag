@@ -116,8 +116,8 @@
       <div class="android-content mdl-layout__content">
        
         <jsp:doBody />
-		<template:footer />
       </div>
+		<template:footer />
     </div>
   </body>
 </html>

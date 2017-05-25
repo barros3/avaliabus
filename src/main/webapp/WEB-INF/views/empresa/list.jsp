@@ -6,7 +6,8 @@
 
 <script src="<c:url value='/assets/js/jquery.jqpagination.js'/>"></script>
 
-<base href="https://avaliabus.herokuapp.com/" />
+<!-- <base href="https://avaliabus.herokuapp.com/" /> -->
+<base href="http://localhost:8080/avaliabus/" />
 
 <template:admin>
 	<div class="android-more-section mdl-dialog full-width" style="width: 100%; background-color: #bfd8af;">

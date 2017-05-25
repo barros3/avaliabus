@@ -94,7 +94,7 @@ public class ServiceAPPRestController {
 
 	}
 	
-	@RequestMapping(value = "/login/", method = RequestMethod.POST, produces = "application/json")
+	@RequestMapping(value = "/user/login/", method = RequestMethod.POST, produces = "application/json")
 	public ResponseEntity<Void> loginUsuario(String login, String senha, UriComponentsBuilder ucBuilder) {
 		
 		Usuario usuario = usuarioSessionDAO.findByLoginAndSenha(login, senha);

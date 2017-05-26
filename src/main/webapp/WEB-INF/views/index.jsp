@@ -33,139 +33,100 @@
 			</script>
 		</c:if>
 		<c:if test="${not isLogado}" var="isLogado">
-			<p class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%;">Compartilhe o AvaliaBUS!</p>
+				<p class="mdl-button show-modal mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" style="width:100%;">Compartilhe o AvaliaBUS!</p>
+				</div>
+				<div class="mdl-cell mdl-cell--2-col"></div>
+			</div>
 		</c:if>
 	</div>
 	<div class="android-more-section">
-		<div style="margin: -4% 0% 0% 14%">
-		
-<!-- 		<button id="myBtn">Open Modal</button> -->
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <!-- <div class="modal-content">
-    <span class="close">&times;</span>
-    <p>Some text in the Modal..</p>
-  </div>
-
-</div> -->
-
-<!-- <script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-    modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
-</script> -->
-		</div>
-		<div class="android-card-container mdl-grid" style="text-align: justify; margin: 0% 10% 0% 0%">
-			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-				<div class="mdl-card__media">
-					<img src="assets/mdl/images/frequencia.png">
+		<div style="margin: -4% 0% 0% 14%"></div>
+			<div class="android-card-container mdl-grid" style="text-align: justify;">
+				<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+					<div class="mdl-card__media">
+						<img src="assets/mdl/images/frequencia.png">
+					</div>
+					<div class="mdl-card__title">
+						<h4 class="mdl-card__title-text">Avaliação</h4>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<span class="mdl-typography--font-light mdl-typography--subhead">
+							Acessando ao conteúdo deste card você verá uma página preenchida
+							com campos para realizar uma AVALIAÇÃO da qualidade do serviço do
+							Onibus em questão. Lembre-se de ter em mãos todos os dados do
+							coletivo como: linha, horário e empresa. </span>
+					</div>
+					<div class="mdl-card__actions">
+						<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+							href="avaliacao/form">AVALIE<i class="material-icons">chevron_right</i>
+						</a>
+					</div>
 				</div>
-				<div class="mdl-card__title">
-					<h4 class="mdl-card__title-text">Avaliação</h4>
+	
+				<div
+					class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+					<div class="mdl-card__media">
+						<img src="assets/mdl/images/denuncia.png">
+					</div>
+					<div class="mdl-card__title">
+						<h4 class="mdl-card__title-text">Denúncia</h4>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<span class="mdl-typography--font-light mdl-typography--subhead">
+							Denuncie o serviço anonimamente através desta pagina. Lembre-se
+							que para realizar a Denúncia vc terá que estar logado - não se
+							preocupe, toda denúncia e feita anônima e não fazemos a relação
+							entre o usuário e a denúncia. </span>
+					</div>
+					<div class="mdl-card__actions">
+						<a
+							class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+							href="denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
+						</a>
+					</div>
 				</div>
-				<div class="mdl-card__supporting-text">
-					<span class="mdl-typography--font-light mdl-typography--subhead">
-						Acessando ao conteúdo deste card você verá uma página preenchida
-						com campos para realizar uma AVALIAÇÃO da qualidade do serviço do
-						Onibus em questão. Lembre-se de ter em mãos todos os dados do
-						coletivo como: linha, horário e empresa. </span>
+	
+				<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+					<div class="mdl-card__media">
+						<img src="assets/mdl/images/sugestao.png">
+					</div>
+					<div class="mdl-card__title">
+						<h4 class="mdl-card__title-text">Sugestão</h4>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<span class="mdl-typography--font-light mdl-typography--subhead">
+							Nós também temos o direito de sugerir melhorias para o transporte
+							coletivo. Nós pagamos diariamente, Nós enxergamos de perto as
+							necessidades mais baiscas do passageiro... Faça sua parte! </span>
+					</div>
+					<div class="mdl-card__actions">
+						<a
+							class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+							href="sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
+						</a>
+					</div>
 				</div>
-				<div class="mdl-card__actions">
-					<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="avaliacao/form">AVALIE<i class="material-icons">chevron_right</i>
-					</a>
-				</div>
-			</div>
-
-			<div
-				class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-				<div class="mdl-card__media">
-					<img src="assets/mdl/images/denuncia.png">
-				</div>
-				<div class="mdl-card__title">
-					<h4 class="mdl-card__title-text">Denúncia</h4>
-				</div>
-				<div class="mdl-card__supporting-text">
-					<span class="mdl-typography--font-light mdl-typography--subhead">
-						Denuncie o serviço anonimamente através desta pagina. Lembre-se
-						que para realizar a Denúncia vc terá que estar logado - não se
-						preocupe, toda denúncia e feita anônima e não fazemos a relação
-						entre o usuário e a denúncia. </span>
-				</div>
-				<div class="mdl-card__actions">
-					<a
-						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
-					</a>
-				</div>
-			</div>
-
-			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-				<div class="mdl-card__media">
-					<img src="assets/mdl/images/sugestao.png">
-				</div>
-				<div class="mdl-card__title">
-					<h4 class="mdl-card__title-text">Sugestão</h4>
-				</div>
-				<div class="mdl-card__supporting-text">
-					<span class="mdl-typography--font-light mdl-typography--subhead">
-						Nós também temos o direito de sugerir melhorias para o transporte
-						coletivo. Nós pagamos diariamente, Nós enxergamos de perto as
-						necessidades mais baiscas do passageiro... Faça sua parte! </span>
-				</div>
-				<div class="mdl-card__actions">
-					<a
-						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
-					</a>
-				</div>
-			</div>
-
-			<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
-				<div class="mdl-card__media">
-					<img src="assets/mdl/images/resultados.jpeg">
-				</div>
-				<div class="mdl-card__title">
-					<h4 class="mdl-card__title-text">Resultados</h4>
-				</div>
-				<div class="mdl-card__supporting-text">
-					<span class="mdl-typography--font-light mdl-typography--subhead">
-						Acessando aqui, você tera acesso aos info-gráficos gerados a
-						partir da coleta de dados enviados pelos usuários. Para acessa as
-						informações nessa área você não precisa estar logado. Vamos lá! </span>
-				</div>
-				<div class="mdl-card__actions">
-					<a
-						class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-						href="resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
-					</a>
+	
+				<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
+					<div class="mdl-card__media">
+						<img src="assets/mdl/images/resultados.jpeg">
+					</div>
+					<div class="mdl-card__title">
+						<h4 class="mdl-card__title-text">Resultados</h4>
+					</div>
+					<div class="mdl-card__supporting-text">
+						<span class="mdl-typography--font-light mdl-typography--subhead">
+							Acessando aqui, você tera acesso aos info-gráficos gerados a
+							partir da coleta de dados enviados pelos usuários. Para acessa as
+							informações nessa área você não precisa estar logado. Vamos lá! </span>
+					</div>
+					<div class="mdl-card__actions">
+						<a
+							class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+							href="resultados/form"> RESULTADOS <i class="material-icons">chevron_right</i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</div>
 </template:admin>

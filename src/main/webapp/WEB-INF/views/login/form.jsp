@@ -107,18 +107,18 @@
 			if(response_email != "true" && response_login != "true" && checkSenha() === 'true'){
 				alert("Liberar botao -> VALIDOU")
 			}else{
-				alert("Liberar botao -> NOT VALIDOU")
+				alert("Necessário preencher todos os campos!")
 			}	
 		});
 	});
 	
 </script>
 
-<div class="mdl-grid">
+	<div class="mdl-grid">
 		<div class="mdl-cell mdl-cell--1-col"></div>
-			<dialog class="mdl-dialog full-width" style="width: 75%; height: 100% !important;">
+			<dialog class="mdl-dialog full-width" style="width: 75%; height: 85% !important; margin: 0% 15% 0% 13%;">
 				<div class="mdl-card__title mdl-color-text--primary">
-					<h2 class="mdl-card__title-text">Área de Login - AvaliaBUS</h2>
+					<h2 class="mdl-card__title-text"  style="margin: 0% 45% 0% 40%;">Área de Login</h2>
 				</div>
 			    <div class="mdl-grid">
 					<div class="mdl-grid mdl-shadow--6dp mdl-cell mdl-cell--7-col">
@@ -168,8 +168,7 @@
 								      testAPI();
 								    } else {
 								      // The person is not logged into your app or we are unable to tell.
-								      document.getElementById('status').innerHTML = 'Please log ' +
-								        'into this app.';
+								      document.getElementById('status').innerHTML = 'Acesse rápido com seu Facebook!';
 								    }
 								  }
 								
@@ -319,3 +318,4 @@
 		});
 	</script>
 </div>
+

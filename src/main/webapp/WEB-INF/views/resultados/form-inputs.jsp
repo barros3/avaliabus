@@ -15,7 +15,7 @@
 
 	</p>
 	<div class="android-card-container mdl-grid">
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/freq-result.jpg">
 			</div>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/pont-result.jpg">
 			</div>
@@ -53,7 +53,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/limp-result.jpg">
 			</div>
@@ -73,7 +73,7 @@
 		</div>
 	</div>
 	<div class="android-card-container mdl-grid">
-		<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/lot-result.jpg">
 			</div>
@@ -92,7 +92,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/conducao-result.jpg">
 			</div>
@@ -111,12 +111,12 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/condicoes-result.jpg">
 			</div>
 			<div class="mdl-card__title">
-				<h4 class="mdl-card__title-text" style="font-size: 18px">Condições do ônibus</h4>
+				<h4 class="mdl-card__title-text" style="font-size: 18px">Conservação do Veículo</h4>
 			</div>
 			<div class="mdl-card__supporting-text">
 				<!-- <span class="mdl-typography--font-light mdl-typography--subhead">
@@ -145,7 +145,7 @@
 	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
 	</p>
 	<div class="android-card-container mdl-grid">
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/santa-maria.jpg">
 			</div>
@@ -164,7 +164,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/mandacaruense.JPG">
 			</div>
@@ -183,7 +183,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/marcos-da-silva.JPG">
 			</div>
@@ -202,7 +202,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/transnacional.jpg">
 			</div>
@@ -221,7 +221,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/sao-jorge.JPG">
 			</div>
@@ -240,7 +240,7 @@
 			</div>
 		</div>
 		
-		<div class="mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
+		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
 				<img src="assets/mdl/images/reunidas.jpg">
 			</div>

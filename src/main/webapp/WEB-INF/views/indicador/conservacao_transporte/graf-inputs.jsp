@@ -307,10 +307,15 @@
 </script>
 <div class="android-more-section mdl-dialog full-width" style="width: 100%; background-color: #ffffff;">
 <h1 class="mdl-color-text--primary mdl-shadow--6dp"
-		style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Conservação do Coletivo</h1>
+		style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Conservação do Veículo</h1>
 <br>
 <p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-			Nesta área você tem acesso aos indicadores de conservação do coletivo. 
+			Atualmente é difícil ver ônibus que seja velho,
+			 no entanto, o indicador de Condições do Veículo 
+			 definir um parâmetro referente ao estado do ônibus.
+			  Se existir algo no ônibus como: banco quebrado, pneus velhos, 
+			  buracos no assoalho, ou etc. É necessário verificar como será avaliado esta linha de ônibus.
+
 	</p>
 	<div class="mdl-grid mdl-shadow--6dp">
 		<div id="piechart_cons_colet_stn_m" class="mdl-cell--4-col"></div>

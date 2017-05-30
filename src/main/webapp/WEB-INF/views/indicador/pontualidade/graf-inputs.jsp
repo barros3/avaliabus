@@ -310,7 +310,8 @@
 			style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Pontualidade</h1>
 	<br>
 	<p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-				Nesta área você tem acesso aos indicadores de pontualidade 
+				O indicador de Pontualidade representa o quão a linha de ônibus está cumprindo com o seu 
+				horário estabelecido. Essa tabela com os horário você pode encontrar no site da SEMOB.
 		</p>
 		<div class="mdl-grid mdl-shadow--6dp">
 	

@@ -310,7 +310,12 @@
 			style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Limpeza</h1>
 	<br>
 	<p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-				Nesta área você tem acesso aos indicadores de limpeza
+				O indicador de Limpeza representa as condições
+				 de higiene do coletivo. Embora isso, seja algo 
+				 relativo ao dia que se ande de ônibus, se encontrarmos 
+				 uma frequência de sujeira este ônibus deve ser avaliado 
+				 com a limpeza não tão boa.
+
 	</p>
 	<div class="mdl-grid mdl-shadow--6dp">
 		<div id="piechart_limp_stn_m" class="mdl-cell--4-col"></div>

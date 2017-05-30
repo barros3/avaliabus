@@ -311,8 +311,9 @@
 		style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Indicadores de Frequência</h1>
 <br>
 <p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-			Para realizar a Avaliação do Onibus é necessário preencher os dados do transporte coletivo
-		que vc deseja avaliar e marcar os indicadores de avaliação abaixo, que variam de "Péssimo" à "Excelente". 
+			O indicador de Frequência  representa a frequência que o ônibus passa na parada. 
+			Se uma determinada linha ônibus passa mais 
+			vezes que outra significa a avaliação deve ser considerada Excelente. 
 	</p>
 	<div class="mdl-grid mdl-shadow--6dp">
 		<div id="piechart_freq_stn_m" class="mdl-cell--4-col"></div>

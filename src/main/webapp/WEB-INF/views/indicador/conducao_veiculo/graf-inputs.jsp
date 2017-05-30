@@ -310,7 +310,10 @@
 		style="text-align: center; height: 8%; margin: 0% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Condução dos Motorista</h1>
 <br>
 <p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-			Nesta área você tem acesso aos indicadores de pontualidade 
+			É fácil encontrar motoristas qualificados para o serviço pois estes 
+			são gentis e dirigem com prudência, entretanto, há aqueles que não respeitam
+			 o usuário e dirigem com imprudência e com 
+			comportamento hostil. É necessário avaliá-los de acordo com sua perspectiva.
 	</p>
 	<div class="mdl-grid mdl-shadow--6dp">
 		<div id="piechart_cond_motor_stn_m" class="mdl-cell--4-col"></div>

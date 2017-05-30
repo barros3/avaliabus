@@ -20,5 +20,5 @@
 				)
 		</script>
 		
-		<meta http-equiv="Refresh" content="1;url=/avaliabus/"/>	 
+		<meta http-equiv="Refresh" content="1;url=/home"/>	 
 </template:admin>

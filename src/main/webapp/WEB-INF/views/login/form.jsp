@@ -62,7 +62,7 @@
 		$.ajax({
 			type : "get",
 			url : "home/check-login",
-			contentType : "application/json",
+			contentType : "application/json; charset=utf-8",
 			data : {
 				login : _login
 			},
@@ -103,8 +103,11 @@
 	}
 	
 	$(document).ready(function(){
+		var re_email = $("#email").val();
+		var re_login = $("#login").val();
+		
 		$("#btn-cadastrar").blur('blur', function(){
-			if(response_email != "true" && response_login != "true" && checkSenha() === 'true'){
+			if(re_email != "true" && re_login != "true" && checkSenha() === 'true'){
 				alert("Liberar botao -> VALIDOU")
 			}else{
 				alert("Necessário preencher todos os campos!")
@@ -164,7 +167,30 @@
 								    // Full docs on the response object can be found in the documentation
 								    // for FB.getLoginStatus().
 								    if (response.status === 'connected') {
-								      // Logged into your app and Facebook.
+								      
+// 							    	var _name = response.name;
+// 							    	var _status = response.status;
+// 							    	var _token = response.token;
+// 							    	var _accessToken = response.accessToken;
+								      
+// 								      $.ajax({
+// 								    	  type: "POST",
+// 								    	  contentType: "application/json; charset=utf-8",
+// 								    	  url: "usuairo/login-facebook",
+// 								    	  data: {
+// 								    		  _name = name,
+// 								    		  _status = status,
+// 								    		  _accessToken = accessToken;
+// 								    	  },
+// 								    	  success: function(){
+// 								    		  alert("bem vindo!");
+// 								    	  }, 
+// 								    	  error: {
+// 								    		  alert("falhou no ajax");
+// 								    	  }
+								    	  
+// 								      });
+								      
 								      testAPI();
 								    } else {
 								      // The person is not logged into your app or we are unable to tell.
@@ -225,11 +251,12 @@
 								    console.log('carregue as informacoes aqui.... ');
 								    FB.api('/me', function(response) {
 								      console.log('Login sucesso com: ' + response.name);
-								      console.log("Nome" + response)
+								      console.log("Nome " + response.name)
 								      document.getElementById('status').innerHTML =
 								        response.name + ', já pode usar nossos servicos!';
 								    });
 								  }
+								  
 								</script>
 
 								<!--

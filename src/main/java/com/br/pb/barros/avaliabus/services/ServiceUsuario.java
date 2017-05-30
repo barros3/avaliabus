@@ -25,7 +25,7 @@ public class ServiceUsuario {
 	
 	@Autowired private PasswordEncoder passwordEncoder;
 
-	@Transactional public void saveUsuario(Usuario usuario) {
+	public void saveUsuario(Usuario usuario) {
 		
 		Set<Role> role = new HashSet<Role>();
 		Role rol = new Role();

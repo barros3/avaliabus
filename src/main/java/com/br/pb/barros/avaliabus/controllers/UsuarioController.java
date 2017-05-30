@@ -85,4 +85,9 @@ public class UsuarioController {
 		return serviceUsuario.checkExistsLogin(login);
 	}
 	
+	@RequestMapping(method = RequestMethod.GET, value = "/login-facebook", produces = "application/json")
+	public @ResponseBody String loginFacebook(@RequestParam("login") String login,
+							HttpServletRequest request, HttpServletResponse response){
+		return serviceUsuario.checkExistsLogin(login);
+	}
 }

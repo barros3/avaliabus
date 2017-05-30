@@ -32,11 +32,30 @@
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="assests/materialize/js/materialize.min.js"></script>
+    
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+    <script type="text/javascript">
+     $(document).scroll(function() {
+
+         if ($(this).scrollTop()>12)
+          {
+             $('#menu-top').fadeOut();
+          }
+         else
+          {
+           $('#menu-top').fadeIn();
+          }
+ 	});
+
+    </script>
   </head>
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
 
-      <div class="android-header mdl-layout__header">
+      <div id="menu-top" class="android-header mdl-layout__header">
         <div class="mdl-layout__header-row">
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>

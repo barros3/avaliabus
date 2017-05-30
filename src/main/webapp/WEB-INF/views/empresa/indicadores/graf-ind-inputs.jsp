@@ -27,7 +27,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/indicador/list_cond_moto_indicador",
+					url : "indicador/list_cond_moto_indicador",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -76,7 +76,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/indicador/list_cond_moto_indicador",
+					url : "indicador/list_cond_moto_indicador",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -125,7 +125,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/indicador/list_cond_moto_indicador",
+					url : "indicador/list_cond_moto_indicador",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -174,7 +174,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/indicador/list_cond_moto_indicador",
+					url : "indicador/list_cond_moto_indicador",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -222,7 +222,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/indicador/list_cond_moto_indicador",
+					url : "indicador/list_cond_moto_indicador",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -271,7 +271,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/indicador/list_cond_moto_indicador",
+					url : "indicador/list_cond_moto_indicador",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 

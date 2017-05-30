@@ -27,7 +27,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-mandacaruense",
+					url : "empresa/indicadores/graf-indicadores-empresa-mandacaruense",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -76,7 +76,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-mandacaruense",
+					url : "empresa/indicadores/graf-indicadores-empresa-mandacaruense",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -123,7 +123,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-mandacaruense",
+					url : "empresa/indicadores/graf-indicadores-empresa-mandacaruense",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -170,7 +170,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-mandacaruense",
+					url : "empresa/indicadores/graf-indicadores-empresa-mandacaruense",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -216,7 +216,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-mandacaruense",
+					url : "empresa/indicadores/graf-indicadores-empresa-mandacaruense",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -263,7 +263,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-mandacaruense",
+					url : "empresa/indicadores/graf-indicadores-empresa-mandacaruense",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 

@@ -30,7 +30,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
+					url : "empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -79,7 +79,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
+					url : "empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -123,7 +123,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
+					url : "empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -167,7 +167,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
+					url : "empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -213,7 +213,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
+					url : "empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 
@@ -260,7 +260,7 @@
 		$
 				.ajax({
 					type : "post",
-					url : "/avaliabus/empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
+					url : "empresa/indicadores/graf-indicadores-empresa-marcos-da-silva",
 					contentType : "application/json; charset=utf-8",
 					success : function(response) {
 

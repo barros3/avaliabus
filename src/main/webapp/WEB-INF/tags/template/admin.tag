@@ -20,12 +20,16 @@
     <link rel="stylesheet" href="<c:url value='assets/mdl/styles.css'/>">
     <!-- bootstrap -->
 	<link rel="stylesheet" href="<c:url value='assets/css/bootstrap.css'/>">
-    
-    <base href="http://localhost:8080/avaliabus/" />
-<!-- 		<base href="http://avaliabus.herokuapp.com/" />	 -->
-    
-    
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+
+<c:if test="${isLocal == true}" var="isLocal">
+	<base href="http://localhost:8080/avaliabus/" />
+</c:if>
+<c:if test="${isLocal == false}" var="isLocal">
+	<base href="https://avaliabus.herokuapp.com/" />
+</c:if>
+
+
+<script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     
     <!-- Materialize -->
 	<script src="<c:url value='/assets/newlayout/js/vendor/materialize/materialize.min.js'/>"></script>

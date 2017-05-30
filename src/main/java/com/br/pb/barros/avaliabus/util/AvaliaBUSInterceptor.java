@@ -23,6 +23,10 @@ public class AvaliaBUSInterceptor extends HandlerInterceptorAdapter {
 	@Override
 	public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handle) throws Exception {
 
+		// Defini se aplicacao esta remota ou local
+		request.setAttribute("isLocal", session.isLocal());
+
+		
 		Authentication authentication = (Authentication) SecurityContextHolder.getContext().getAuthentication();		
 		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
 		

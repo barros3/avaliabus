@@ -3,8 +3,12 @@
 <%@taglib tagdir="/WEB-INF/tags/template" prefix="template"%>
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" %>
 
-<!-- <base href="https://avaliabus.herokuapp.com/" /> -->
-<base href="http://localhost:8080/avaliabus/" />
+ <c:if test="${isLocal == true}" var="isLocal">
+ 	<base href="http://localhost:8080/avaliabus/" />
+ </c:if>
+ <c:if test="${isLocal == false}" var="isLocal">
+ 	<base href="https://avaliabus.herokuapp.com/" />
+ </c:if>
 
 <template:admin>
 	<div class="mdl-grid">

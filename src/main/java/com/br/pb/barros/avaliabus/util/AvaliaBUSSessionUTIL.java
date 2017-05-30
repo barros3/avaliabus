@@ -15,6 +15,8 @@ public class AvaliaBUSSessionUTIL {
 	
 	private boolean isLogado;
 	
+	private boolean isLocal = false;
+	
 	public boolean isAdminMaster(){
 		return isAdminMaster;
 	}
@@ -29,6 +31,10 @@ public class AvaliaBUSSessionUTIL {
 
 	public void setLogado(boolean isLogado) {
 		this.isLogado = isLogado;
+	}
+	
+	public boolean isLocal() {
+		return isLocal;
 	}
 	
 }

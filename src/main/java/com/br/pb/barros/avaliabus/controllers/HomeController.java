@@ -44,6 +44,11 @@ public class HomeController {
 		return new ModelAndView("success");
 	}
 	
+	@RequestMapping(value = "/erro", method = RequestMethod.GET)
+	public ModelAndView erro(ModelMap modelMap) {
+		return new ModelAndView("erro");
+	}
+	
 	@RequestMapping(method = RequestMethod.POST)	public ModelAndView save(@Valid Usuario usuario, BindingResult bindingResult) {
 		serviceUsuario.saveUsuario(usuario);
 		
@@ -53,7 +58,7 @@ public class HomeController {
 			usuarioLogado.setUsuario(usuario);
 		}
 		
-		return new ModelAndView("redirect:/");
+		return new ModelAndView("success-cadastro");
 	}	
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/check-login", produces = "application/json")

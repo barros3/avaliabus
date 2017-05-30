@@ -15,11 +15,10 @@
 <template:admin>
 		<script>
 			swal(
-				  'Enviado!',
-				  'Avaliação realizada com sucesso!',
-				  'success'
+				  'Usuário Cadastrado com sucesso!!',
+				  'Agora faça Login na aplicação!'
 				)
 		</script>
 		
-		<meta http-equiv="Refresh" content="1;url=avaliabus"/>	 
+		<meta http-equiv="Refresh" content="1;url=/avaliabus/"/>	 
 </template:admin>

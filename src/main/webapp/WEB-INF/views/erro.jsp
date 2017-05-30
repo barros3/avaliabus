@@ -15,11 +15,10 @@
 <template:admin>
 		<script>
 			swal(
-				  'Enviado!',
-				  'Avaliação realizada com sucesso!',
-				  'success'
+				  'Ops..!!',
+				  'Usuário/Senha não existe ou não cadastrado!'
 				)
 		</script>
 		
-		<meta http-equiv="Refresh" content="1;url=avaliabus"/>	 
+		<meta http-equiv="Refresh" content="1;url=/avaliabus/index"/>	 
 </template:admin>

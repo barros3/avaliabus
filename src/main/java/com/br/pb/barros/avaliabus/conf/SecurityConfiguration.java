@@ -93,7 +93,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     .sessionRegistry(sessionRegistry());
 	
 	http
-		.authorizeRequests().antMatchers("/home/**", "/registrar/**", "/autenticar/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**").permitAll()
+		.authorizeRequests().antMatchers("/home/**", "/registrar/**", "/autenticar/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**", "/success/**", "/index/**", "/erro").permitAll()
 	.and()
 		.authorizeRequests().antMatchers("/denuncia/**", "/avaliacao/**", "/sugestao/**").hasAnyAuthority("USER", "ADMIN_MASTER")
 	.and()

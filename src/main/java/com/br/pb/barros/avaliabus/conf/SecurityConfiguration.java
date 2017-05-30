@@ -107,7 +107,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	  	.loginPage("/")
 	  	.usernameParameter("username")
 	  	.passwordParameter("password")
-	  	.defaultSuccessUrl("/" , true)
+	  	.defaultSuccessUrl("/success" , true)
 	  	.failureUrl("/erro").permitAll()
   	.and()
   		.rememberMe().rememberMeServices(tokenBasedRememberMeService)

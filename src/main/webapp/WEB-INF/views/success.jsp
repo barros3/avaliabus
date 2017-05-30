@@ -11,11 +11,10 @@
 <template:admin>
 		<script>
 			swal(
-				  'Enviado!',
-				  'Denúncia realizada com sucesso!',
-				  'success'
+				  'Bem Vindo!!',
+				  'Faça cidadania com suas mãos!'
 				)
 		</script>
 		
-		<meta http-equiv="Refresh" content="1;url=denuncia/form"/>	 
+		<meta http-equiv="Refresh" content="1;url=/avaliabus"/>	 
 </template:admin>

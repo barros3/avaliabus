@@ -11,7 +11,7 @@
 <template:admin>
 		<script>
 			swal(
-				  'Enviado',
+				  'Enviado!',
 				  'Sugestão realizada com sucesso!',
 				  'success'
 				)

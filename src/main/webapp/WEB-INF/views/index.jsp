@@ -116,7 +116,7 @@
 					<div class="mdl-card__supporting-text">
 						<span class="mdl-typography--font-light mdl-typography--subhead">
 							Acessando aqui, você tera acesso aos info-gráficos gerados a
-							partir da coleta de dados enviados pelos usuários. Para acessa as
+							partir da coleta de dados enviados pelos usuários. Para acessar as
 							informações nessa área você não precisa estar logado. Vamos lá! </span>
 					</div>
 					<div class="mdl-card__actions">

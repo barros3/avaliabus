@@ -323,7 +323,7 @@
 	<div class="mdl-grid mdl-shadow--6dp">
 		<div id="piechart_cond_motor_trans" class="mdl-cell--4-col"></div>
 		<div id="piechart_cond_motor_sj" class="mdl-cell--4-col"></div>
-		<div id="piechart_freq_reun" class="mdl-cell--4-col"></div>
+		<div id="piechart_cond_motor_reun" class="mdl-cell--4-col"></div>
 	</div>
 	<div class="mdl-cell--4-col"></div>
 	<div class="mdl-cell--4-col"></div>

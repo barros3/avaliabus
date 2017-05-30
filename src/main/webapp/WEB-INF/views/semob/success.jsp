@@ -12,10 +12,10 @@
 		<script>
 			swal(
 				  'Enviado!',
-				  'Denúncia realizada com sucesso!',
+				  'Avaliação realizada com sucesso!',
 				  'success'
 				)
 		</script>
 		
-		<meta http-equiv="Refresh" content="1;url=denuncia/form"/>	 
+		<meta http-equiv="Refresh" content="1;url=avaliabus"/>	 
 </template:admin>

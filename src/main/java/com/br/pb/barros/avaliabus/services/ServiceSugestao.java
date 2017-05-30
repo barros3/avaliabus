@@ -75,8 +75,7 @@ public class ServiceSugestao {
 						+ "todos fiquem cientes da real situação dos meios de transporte. <br> <br>"
 						+ "O passageiro da empresa <b>" + sugestao.getEmpresa().getTipoNomeEmpresa().getValor()
 						+ "</b> deseja" + " reportar a seguinte sugestão: <br><br>" + "<i>" + sugestao.getDescricao()
-						+ "</i><br><br>"
-						+ "Ele também disponibilizou essa imagem para agregar valor à sua ocorrência: <br>";
+						+ "</i><br><br>";
 
 		mm.enviarEmailSemImagem(sugestao.getEmpresa().getEmail(), corpo);
 	}

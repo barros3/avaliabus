@@ -59,14 +59,14 @@
         <div class="mdl-layout__header-row">
           <!-- Add spacer, to align navigation to the right in desktop -->
           <div class="android-header-spacer mdl-layout-spacer"></div>
-          <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
+          <!-- <div class="android-search-box mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right mdl-textfield--full-width">
             <label class="mdl-button mdl-js-button mdl-button--icon" for="search-field">
               <i class="material-icons">search</i>
             </label>
             <div class="mdl-textfield__expandable-holder">
               <input class="mdl-textfield__input" type="text" id="search-field">
             </div>
-          </div>
+          </div> -->
           <!-- Navigation -->
           <div class="android-navigation-container">
             <nav class="android-navigation mdl-navigation">
@@ -82,9 +82,11 @@
           <span class="android-mobile-title mdl-layout-title">
 <!--             <img class="android-logo-image" src="assets/mdl/images/android-logo.png"> -->
           </span>
-          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
-            <i class="material-icons">more_vert</i>
-          </button>
+          <c:if test="${isLogado == true}" var="isLogado">
+	          <button class="android-more-button mdl-button mdl-js-button mdl-button--icon mdl-js-ripple-effect" id="more-button">
+	            <i class="material-icons">more_vert</i>
+	          </button>
+	      </c:if>
           <ul class="mdl-menu mdl-js-menu mdl-menu--bottom-right mdl-js-ripple-effect" for="more-button">
 <%--             <li><a href="<c:url value='resultados/form'/>" class="mdl-menu__item" style="text-decoration:none;">Resultados</a></li> --%>
 <%--             <li><a href="<c:url value='avaliacao/form'/>" class="mdl-menu__item" style="text-decoration:none;">Avaliação</a></li> --%>
@@ -106,7 +108,7 @@
          <img alt="logo" src="assets/mdl/images/luciano.jpg" style="margin: 9% 0% 0% 5%">
         </span>
         <nav class="mdl-navigation">
-  	  	<span class="mdl-navigation__link" href="">Administrador</span>
+  	  	<span class="mdl-navigation__link" href="">ADMIN</span>
           <a class="mdl-navigation__link" href="<c:url value='usuario/form'/>" style="text-decoration:none;">Cadastrar Usuário</a>
           <a class="mdl-navigation__link" href="<c:url value='usuario/'/>" style="text-decoration:none;">Listar Usuário</a>
 <%--           <a class="mdl-navigation__link" href="<c:url value='/sugestao/form'/>" style="text-decoration:none;">Sugestão</a> --%>
@@ -114,6 +116,9 @@
           	<span class="mdl-navigation__link" href="">EMPRESAS</span>
 <%--           	<a class="mdl-navigation__link" href="<c:url value='http://avaliabus.herokuapp.com//empresa/form'/>" style="text-decoration:none;">Cadastrar Empresas</a> --%>
           	<a class="mdl-navigation__link" href="<c:url value='empresa/'/>" style="text-decoration:none;">Configurações de Empresas</a>
+          	<div class="android-drawer-separator"></div>
+          	<span class="mdl-navigation__link" href="">SEMOB</span>
+          	<a class="mdl-navigation__link" href="<c:url value='semob/form'/>" style="text-decoration:none;">Configurar dados</a>
 <!--           <div class="android-drawer-separator"></div> -->
 <!--           	<span class="mdl-navigation__link" href="">EMPRESAS</span> -->
 <%--           <a class="mdl-navigation__link" href="<c:url value='/empresa/indicadores/santa-maria'/>" style="text-decoration:none;">Santa Maria</a> --%>

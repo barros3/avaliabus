@@ -266,12 +266,11 @@
 <div class="custom-resultados"></div>
 	<h1 class="mdl-color-text--primary mdl-shadow--6dp" style="text-align: center; height: 8%; margin: 4% 0% 0% 0%; padding-top: 1%; width: 100%; background-color: gold;">Ranking das Empresas</h1>
 	<p style="font-size: 22px; text-align: justify !important; font-family: serif; margin: 5% 10% 3% 11%;">
-	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
-	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
-	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
-	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
-	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
-	Sua pesquisa - lpurenmapsu - não encontrou nenhum documento correspondente.
+	Nesta área você encontrará três gráficos que representam a 
+	quantidade de formulários preenchidos. No módulo de avaliação, 
+	cada empresa é representada com uma cor diferente. Passe o mouse 
+	por cima e verá a quantidade e o nome da empresa. Assim é com os gráficos de Sugestão e 
+	de Denúncia. Através deles você pode identificar quem está no topo dos mais avaliados.
 	</p>
 	<div id="chart_div" style="width: 98%; height: 100%;" class="mdl-cell mdl-cell--12-col-tablet mdl-cell--12-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col"></div>
 </div>
@@ -297,11 +296,11 @@
 						   			 response["quantidadeAvaliacao"].quantidadeAvaliacaoMarcosDaSilva],
 					   
 		   			   ['Denúncia',  response["quantidadeDenuncia"].quantidadeDenunciaSantaMaria,
-						   			 response["quantidadeDenuncia"].quantidadeDenunciaReunidas,
-						   			 response["quantidadeDenuncia"].quantidadeDenunciaMarcosDaSilva,
-						   			 response["quantidadeDenuncia"].quantidadeDenunciaSaoJorge,
+		   							 response["quantidadeDenuncia"].quantidadeDenunciaMandacaruense,
+		   							 response["quantidadeDenuncia"].quantidadeDenunciaReunidas,
+		   							 response["quantidadeDenuncia"].quantidadeDenunciaSaoJorge,
 						   			 response["quantidadeDenuncia"].quantidadeDenunciaTransnacional,
-						   			 response["quantidadeDenuncia"].quantidadeDenunciaMandacaruense],
+						   			 response["quantidadeDenuncia"].quantidadeDenunciaMarcosDaSilva],
 						   			 
 					   ['Sugestões', response["quantidadeSugestao"].quantidadeSugestaoSantaMaria,
 						   			 response["quantidadeSugestao"].quantidadeSugestaoMandacaruense,
@@ -313,7 +312,7 @@
 					]);
 					
 					var options = {
-					  title : 'Ranking de Módulos por Empresa',
+					  title : 'Visualização Geral das Estatísticas das Empresas',
 					  vAxis: {title: 'Empresas'},
 					  hAxis: {title: 'Módulos'},
 					  seriesType: 'bars',

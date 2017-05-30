@@ -35,10 +35,13 @@ public class HomeController {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public String login(ModelMap modelMap, @Valid Usuario usuario, @RequestParam(required = false) boolean checkAutorLogin, Model model) {
-		
 		modelMap.addAttribute("usuario", usuario);
-		
 		return "index";
+	}
+	
+	@RequestMapping(value = "/success", method = RequestMethod.GET)
+	public ModelAndView success(ModelMap modelMap) {
+		return new ModelAndView("success");
 	}
 	
 	@RequestMapping(method = RequestMethod.POST)	public ModelAndView save(@Valid Usuario usuario, BindingResult bindingResult) {

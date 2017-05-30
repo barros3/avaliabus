@@ -11,7 +11,7 @@
 <template:admin>
 		<script>
 			swal(
-				  'Enviano',
+				  'Enviado!',
 				  'Avaliação realizada com sucesso!',
 				  'success'
 				)

@@ -70,5 +70,5 @@
 				</div>
 			</div>
 		</div>
-		<button type="submit" href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Cadastrar</button>
+		<button type="submit" href="#" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">Enviar</button>
 	</div>

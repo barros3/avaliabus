@@ -38,14 +38,14 @@ public class JPAConfiguration {
 		DriverManagerDataSource dataSource = new DriverManagerDataSource();
 		dataSource.setDriverClassName("com.mysql.jdbc.Driver");
 		
-		/*dataSource.setUrl("jdbc:mysql://thzz882efnak0xod.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/ktnfu9yl8cm8amqi");
+		dataSource.setUrl("jdbc:mysql://thzz882efnak0xod.cbetxkdyhwsb.us-east-1.rds.amazonaws.com/ktnfu9yl8cm8amqi");
 		dataSource.setUsername("yox9f0sokk6w9e2j");
-		dataSource.setPassword("op0jzleixl1c6eje");*/
+		dataSource.setPassword("op0jzleixl1c6eje");
 		
-		dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
-		dataSource.setUsername("root");
-		dataSource.setPassword("");
-		
+//		dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
+//		dataSource.setUsername("root");
+//		dataSource.setPassword("");
+//		
 		
 		return dataSource;
 	}

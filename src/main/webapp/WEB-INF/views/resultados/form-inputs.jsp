@@ -17,7 +17,7 @@
 	<div class="android-card-container mdl-grid">
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/sa-frequencia.jpg">
+				<a href=""> <img src="assets/mdl/images/sa-frequencia.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text">Frequência</h4>
@@ -36,7 +36,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div style="margin: 7% 0% 0% 0%" class="mdl-card__media">
-				<img src="assets/mdl/images/sa-pontualidade.jpg">
+				<a href="indicador/pontualidade/graffreq"> <img src="assets/mdl/images/sa-pontualidade.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" >Pontualidade</h4>
@@ -55,7 +55,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/sa-limpeza.jpg">
+				<a href="indicador/limpeza/graffreq"> <img src="assets/mdl/images/sa-limpeza.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text">Limpeza</h4>
@@ -74,7 +74,7 @@
 	<div class="android-card-container mdl-grid">
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/sa-lotacao.jpg">
+				<a href="indicador/lotacao/graffreq"> <img src="assets/mdl/images/sa-lotacao.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Lotação</h4>
@@ -92,7 +92,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/sa-conducao-motorista.jpg">
+				<a href="indicador/condVeic/graffreq"> <img src="assets/mdl/images/sa-conducao-motorista.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Condução do Motorista</h4>
@@ -111,7 +111,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/sa-condicao-veiculo.jpg">
+				<a href="indicador/consColetivo/graffreq"> <img src="assets/mdl/images/sa-condicao-veiculo.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Conservação do Veículo</h4>
@@ -142,7 +142,7 @@
 	<div class="android-card-container mdl-grid">
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/santa-maria.jpg">
+				<a href="empresa/indicadores/santa-maria"> <img style="height: 33%;" src="assets/mdl/images/santa-maria.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px" style="font-size: 18px">Santa Maria</h4>
@@ -154,14 +154,14 @@
 			<div class="mdl-card__actions">
 				<a
 					class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-					href="/avaliabus/empresa/indicadores/santa-maria">Acesse<i class="material-icons">chevron_right</i>
+					href="empresa/indicadores/santa-maria">Acesse<i class="material-icons">chevron_right</i>
 				</a>
 			</div>
 		</div>
 		
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/mandacaruense.JPG">
+				<a href="empresa/indicadores/mandacaruense"> <img style="height: 33%;" src="assets/mdl/images/mandacaruense.JPG"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Mandacaruense</h4>
@@ -180,7 +180,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/marcos-da-silva.JPG">
+				<a href="empresa/indicadores/marcos-da-silva"> <img style="height: 33%;" src="assets/mdl/images/marcos-da-silva.JPG"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Marcos da Silva</h4>
@@ -192,14 +192,14 @@
 			<div class="mdl-card__actions">
 				<a
 					class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-					href="/avaliabus/empresa/indicadores/marcos-da-silva">Acesse<i class="material-icons">chevron_right</i>
+					href="empresa/indicadores/marcos-da-silva">Acesse<i class="material-icons">chevron_right</i>
 				</a>
 			</div>
 		</div>
 		
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/transnacional.jpg">
+				<a href="empresa/indicadores/transnacional"> <img style="height: 33%;" src="assets/mdl/images/transnacional.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Transnacional</h4>
@@ -211,14 +211,14 @@
 			<div class="mdl-card__actions">
 				<a
 					class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
-					href="/avaliabus/empresa/indicadores/transnacional">Acesse<i class="material-icons">chevron_right</i>
+					href="empresa/indicadores/transnacional">Acesse<i class="material-icons">chevron_right</i>
 				</a>
 			</div>
 		</div>
 		
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/sao-jorge.JPG">
+				<a href="empresa/indicadores/sao-jorge"> <img style="height: 33%;" src="assets/mdl/images/sao-jorge.JPG"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">São Jorge</h4>
@@ -236,7 +236,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/reunidas.jpg">
+				<a href="empresa/indicadores/reunidas"> <img style="height: 33%;" src="assets/mdl/images/reunidas.jpg"> </a>
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Reunidas</h4>

@@ -49,7 +49,7 @@
 			<div class="android-card-container mdl-grid" style="text-align: justify;">
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img style="margin: 9% 0% 09% 22%; width: 70%;" src="assets/mdl/images/sa-avaliacao.jpg">
+						<a href="avaliacao/form"> <img style="margin: 9% 0% 09% 22%; width: 70%;" src="assets/mdl/images/sa-avaliacao.jpg" /> </a>
 					</div>
 					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text">Avaliação</h4>
@@ -70,7 +70,7 @@
 	
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img style="margin: 4% 0% 0% 10%; width: 85%;" src="assets/mdl/images/sa-denuncia.jpg">
+						<a href="denuncia/form"> <img style="margin: 4% 0% 0% 10%; width: 85%;" src="assets/mdl/images/sa-denuncia.jpg"></a>
 					</div>
 					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text" style="margin: -12% 0% 0% 0%;">Denúncia</h4>
@@ -91,7 +91,7 @@
 	
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img style="margin: 18% 0% 3% 0%; width: 107%;" src="assets/mdl/images/sa-sugestao.jpg">
+						<a href="sugestao/form"> <img style="margin: 18% 0% 3% 0%; width: 107%;" src="assets/mdl/images/sa-sugestao.jpg"> </a>
 					</div>
 					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text">Sugestão</h4>
@@ -111,7 +111,7 @@
 	
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img style="margin: 24% 0% 11% 13%; width: 77%;" src="assets/mdl/images/sa-resultado.jpg">
+						<a href="resultados/form"> <img style="margin: 24% 0% 11% 13%; width: 77%;" src="assets/mdl/images/sa-resultado.jpg"> </a>
 					</div>
 					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text" style="">Resultados</h4>

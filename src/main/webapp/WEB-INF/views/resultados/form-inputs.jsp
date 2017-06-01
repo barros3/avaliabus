@@ -17,10 +17,10 @@
 	<div class="android-card-container mdl-grid">
 		<div class="zoom-ps mdl-cell mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/freq-result.jpg" style="margin: -13% 0% 0% 0%">
+				<img src="assets/mdl/images/sa-frequencia.jpg">
 			</div>
 			<div class="mdl-card__title">
-				<h4 class="mdl-card__title-text" style="font-size: 18px" style="font-size: 18px">Frequência</h4>
+				<h4 class="mdl-card__title-text">Frequência</h4>
 			</div>
 			<div class="mdl-card__supporting-text">
 				<!-- <span class="mdl-typography--font-light mdl-typography--subhead">
@@ -36,10 +36,10 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div style="margin: 7% 0% 0% 0%" class="mdl-card__media">
-				<img src="assets/mdl/images/pont-result.jpg">
+				<img src="assets/mdl/images/sa-pontualidade.jpg">
 			</div>
 			<div class="mdl-card__title">
-				<h4 class="mdl-card__title-text" style="font-size: 18px">Pontualidade</h4>
+				<h4 class="mdl-card__title-text" >Pontualidade</h4>
 			</div>
 			<div class="mdl-card__supporting-text">
 				<!-- <span class="mdl-typography--font-light mdl-typography--subhead">
@@ -55,18 +55,17 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img src="assets/mdl/images/limp-result.jpg">
+				<img src="assets/mdl/images/sa-limpeza.jpg">
 			</div>
 			<div class="mdl-card__title">
-				<h4 class="mdl-card__title-text" style="font-size: 18px">Limpeza</h4>
+				<h4 class="mdl-card__title-text">Limpeza</h4>
 			</div>
 			<div class="mdl-card__supporting-text">
 				<!-- <span class="mdl-typography--font-light mdl-typography--subhead">
 					Gráficos referentes a frequência das linhas de ônibus de cada Empresa</span>-->
 			</div>
 			<div class="mdl-card__actions">
-				<a
-					class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+				<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
 					href="indicador/limpeza/graffreq">Acesse<i class="material-icons">chevron_right</i>
 				</a>
 			</div>
@@ -75,7 +74,7 @@
 	<div class="android-card-container mdl-grid">
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/lot-result.jpg">
+				<img src="assets/mdl/images/sa-lotacao.jpg">
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Lotação</h4>
@@ -93,7 +92,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/conducao-result.jpg">
+				<img src="assets/mdl/images/sa-conducao-motorista.jpg">
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Condução do Motorista</h4>
@@ -112,7 +111,7 @@
 		
 		<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--3-col-phone mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col">
 			<div class="mdl-card__media">
-				<img style="height: 33%;" src="assets/mdl/images/condicoes-result.jpg">
+				<img src="assets/mdl/images/sa-condicao-veiculo.jpg">
 			</div>
 			<div class="mdl-card__title">
 				<h4 class="mdl-card__title-text" style="font-size: 18px">Conservação do Veículo</h4>

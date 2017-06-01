@@ -49,7 +49,7 @@
 			<div class="android-card-container mdl-grid" style="text-align: justify;">
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img src="assets/mdl/images/frequencia.png">
+						<img style="margin: 9% 0% 09% 22%; width: 70%;" src="assets/mdl/images/sa-avaliacao.jpg">
 					</div>
 					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text">Avaliação</h4>
@@ -70,10 +70,10 @@
 	
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img src="assets/mdl/images/denuncia.png">
+						<img style="margin: 4% 0% 0% 10%; width: 85%;" src="assets/mdl/images/sa-denuncia.jpg">
 					</div>
 					<div class="mdl-card__title">
-						<h4 class="mdl-card__title-text">Denúncia</h4>
+						<h4 class="mdl-card__title-text" style="margin: -12% 0% 0% 0%;">Denúncia</h4>
 					</div>
 					<div class="mdl-card__supporting-text">
 						<span class="mdl-typography--font-light mdl-typography--subhead">
@@ -83,8 +83,7 @@
 							entre o usuário e a denúncia. </span>
 					</div>
 					<div class="mdl-card__actions">
-						<a
-							class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+						<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
 							href="denuncia/form">DENUNCIE<i class="material-icons">chevron_right</i>
 						</a>
 					</div>
@@ -92,7 +91,7 @@
 	
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img src="assets/mdl/images/sugestao.png">
+						<img style="margin: 18% 0% 3% 0%; width: 107%;" src="assets/mdl/images/sa-sugestao.jpg">
 					</div>
 					<div class="mdl-card__title">
 						<h4 class="mdl-card__title-text">Sugestão</h4>
@@ -104,8 +103,7 @@
 							necessidades mais baiscas do passageiro... Faça sua parte! </span>
 					</div>
 					<div class="mdl-card__actions">
-						<a
-							class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
+						<a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase"
 							href="sugestao/form">SUGESTIONE<i class="material-icons">chevron_right</i>
 						</a>
 					</div>
@@ -113,10 +111,10 @@
 	
 				<div class="zoom-ps mdl-cell mdl-cell--3-col mdl-cell--4-col-tablet mdl-cell--4-col-phone mdl-card mdl-shadow--3dp">
 					<div class="mdl-card__media">
-						<img src="assets/mdl/images/resultados.jpeg">
+						<img style="margin: 24% 0% 11% 13%; width: 77%;" src="assets/mdl/images/sa-resultado.jpg">
 					</div>
 					<div class="mdl-card__title">
-						<h4 class="mdl-card__title-text">Resultados</h4>
+						<h4 class="mdl-card__title-text" style="">Resultados</h4>
 					</div>
 					<div class="mdl-card__supporting-text">
 						<span class="mdl-typography--font-light mdl-typography--subhead">

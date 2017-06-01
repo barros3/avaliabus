@@ -298,7 +298,7 @@
 							<h2 class="mdl-card__title-text">Cadastre-se já!</h2>
 						</div>
 						<div style="">
-							<form:form role="form" commandName="usuario" servletRelativeAction="/home" method="POST" style="text-align: center">
+							<form:form role="form" commandName="usuario" servletRelativeAction="/save" method="POST" style="text-align: center">
 								<div class="mdl-card__supporting-text">
 									<div class="mdl-grid mdl-textfield mdl-js-textfield mdl-cell--12-col">
 										<div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label mdl-cell mdl-cell--6-col">

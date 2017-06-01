@@ -30,7 +30,7 @@ public class AvaliaBUSInterceptor extends HandlerInterceptorAdapter {
 		Authentication authentication = (Authentication) SecurityContextHolder.getContext().getAuthentication();		
 		Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
 		
-		if(!authentication.getPrincipal().equals("anonymousUser")){
+		if(authorities.iterator().next().getAuthority().equals("USER") || authorities.iterator().next().getAuthority().equals("ADMIN_MASTER")){
 			
 			session.setLogado(true);
 			request.setAttribute("isLogado", session.isLogado());

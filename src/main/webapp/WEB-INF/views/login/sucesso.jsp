@@ -15,6 +15,6 @@
 			)
 	</script>
 	
-	<meta http-equiv="Refresh" content="1;url=/home"/>
+	<meta http-equiv="Refresh" content="1;url=home"/>
  
 </template:admin>

@@ -42,14 +42,13 @@ public class JPAConfiguration {
 		dataSource.setUsername("yox9f0sokk6w9e2j");
 		dataSource.setPassword("op0jzleixl1c6eje");*/
 		
-		dataSource.setUrl("jdbc:mysql://sql10.freemysqlhosting.net/sql10177418");
-		dataSource.setUsername("sql10177418");
-		dataSource.setPassword("83QkJg9rVj");
+//		dataSource.setUrl("jdbc:mysql://sql10.freemysqlhosting.net/sql10177418");
+//		dataSource.setUsername("sql10177418");
+//		dataSource.setPassword("83QkJg9rVj");
 		
-//		dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
-//		dataSource.setUsername("root");
-//		dataSource.setPassword("");
-//		
+		dataSource.setUrl("jdbc:mysql://localhost/avaliabus");
+		dataSource.setUsername("root");
+		dataSource.setPassword("");
 		
 		return dataSource;
 	}

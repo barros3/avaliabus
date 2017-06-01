@@ -35,13 +35,20 @@ public class HomeController {
 	
 	@RequestMapping(method = RequestMethod.GET)
 	public String login(ModelMap modelMap, @Valid Usuario usuario, @RequestParam(required = false) boolean checkAutorLogin, Model model) {
+		
 		modelMap.addAttribute("usuario", usuario);
 		return "index";
 	}
 	
-	@RequestMapping(value = "/success", method = RequestMethod.GET)
+	@RequestMapping(value = "/home", method = RequestMethod.GET)
+	public String home(ModelMap modelMap, @Valid Usuario usuario, @RequestParam(required = false) boolean checkAutorLogin, Model model) {
+		modelMap.addAttribute("usuario", usuario);
+		return "index";
+	}
+	
+	@RequestMapping(value = "/successo", method = RequestMethod.GET)
 	public ModelAndView success(ModelMap modelMap) {
-		return new ModelAndView("success");
+		return new ModelAndView("successo");
 	}
 	
 	@RequestMapping(value = "/erro", method = RequestMethod.GET)
@@ -49,16 +56,9 @@ public class HomeController {
 		return new ModelAndView("erro");
 	}
 	
-	@RequestMapping(method = RequestMethod.POST)	public ModelAndView save(@Valid Usuario usuario, BindingResult bindingResult) {
+	@RequestMapping(value = "/save", method = RequestMethod.POST)	public ModelAndView save(@Valid Usuario usuario, BindingResult bindingResult) {
 		serviceUsuario.saveUsuario(usuario);
-		
-		if(usuarioLogado.getUsuario() != null){
-			System.out.println("Usuario logado!");
-		} else{
-			usuarioLogado.setUsuario(usuario);
-		}
-		
-		return new ModelAndView("success-cadastro");
+		return new ModelAndView("/success-cadastro");
 	}	
 	
 	@RequestMapping(method = RequestMethod.GET, value = "/check-login", produces = "application/json")

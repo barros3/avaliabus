@@ -93,7 +93,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
     .sessionRegistry(sessionRegistry());
 	
 	http
-		.authorizeRequests().antMatchers("/home/**", "/registrar/**", "/autenticar/**", "/login/**", "/indicador/**", "/empresa/**", "/resultados/**", "/success/**", "/index/**", "/erro").permitAll()
+		.authorizeRequests().antMatchers("/registrar/**", "/autenticar/**", "/login/**", "/indicador/**",
+										"/empresa/**", "/resultados/**", "/success-cadastro/**",
+										"/index/**", "/erro", "/home/**", "/save/**", "/successo/**")
+		.permitAll()
 	.and()
 		.authorizeRequests().antMatchers("/denuncia/**", "/avaliacao/**", "/sugestao/**").hasAnyAuthority("USER", "ADMIN_MASTER")
 	.and()
@@ -107,7 +110,7 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	  	.loginPage("/")
 	  	.usernameParameter("username")
 	  	.passwordParameter("password")
-	  	.defaultSuccessUrl("/success" , true)
+	  	.defaultSuccessUrl("/successo", true).permitAll()
 	  	.failureUrl("/erro").permitAll()
   	.and()
   		.rememberMe().rememberMeServices(tokenBasedRememberMeService)

@@ -15,7 +15,7 @@ public class AvaliaBUSSessionUTIL {
 	
 	private boolean isLogado;
 	
-	private boolean isLocal = true;
+	private boolean isLocal = false;
 	
 	public boolean isAdminMaster(){
 		return isAdminMaster;

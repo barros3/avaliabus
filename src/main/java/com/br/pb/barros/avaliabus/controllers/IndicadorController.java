@@ -27,92 +27,68 @@ public class IndicadorController {
 
 	@RequestMapping("/frequencia/graffreq")
 	public ModelAndView formFrequencia(Indicador indicador) {
-
-		ModelAndView modelAndView = new ModelAndView("indicador/frequencia/graf-freq");
-		
-		return modelAndView;
-
+		return new ModelAndView("indicador/frequencia/graf-freq");
 	}
 	
 	@RequestMapping("/pontualidade/graffreq")
 	public ModelAndView formPontualidade(Indicador indicador) {
-
-		ModelAndView modelAndView = new ModelAndView("indicador/pontualidade/graf-freq");
-		
-		return modelAndView;
-
+		return new ModelAndView("indicador/pontualidade/graf-freq");
 	}
 	
 	@RequestMapping("/limpeza/graffreq")
 	public ModelAndView formLimpeza(Indicador indicador) {
-
-		ModelAndView modelAndView = new ModelAndView("indicador/limpeza/graf-freq");
-		
-		return modelAndView;
-
+		return new ModelAndView("indicador/limpeza/graf-freq");
 	}
 	
 	@RequestMapping("/lotacao/graffreq")
 	public ModelAndView formConducaoLotacao(Indicador indicador) {
-
-		ModelAndView modelAndView = new ModelAndView("indicador/lotacao/graf-freq");
-		
-		return modelAndView;
-
+		return new ModelAndView("indicador/lotacao/graf-freq");
 	}
 	
 	@RequestMapping("/condVeic/graffreq")
 	public ModelAndView formConducaoMotorista(Indicador indicador) {
-
-		ModelAndView modelAndView = new ModelAndView("indicador/conducao_veiculo/graf-freq");
-		
-		return modelAndView;
-
+		return new ModelAndView("indicador/conducao_veiculo/graf-freq");
 	}
 	
 	@RequestMapping("/consColetivo/graffreq")
 	public ModelAndView formConservacaoColetivo(Indicador indicador) {
-
-		ModelAndView modelAndView = new ModelAndView("indicador/conservacao_transporte/graf-freq");
-		
-		return modelAndView;
-
+		return new ModelAndView("indicador/conservacao_transporte/graf-freq");
 	}
 
 	@RequestMapping(value = "/list_freq_indicador", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody String resultIndicadoresFrequenciaPorEmpresa(HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
-		String result = serviceIndicador.checkFrequencia();
-		return result;
+	public @ResponseBody String resultIndicadoresFrequenciaPorEmpresa(
+			HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
+		return serviceIndicador.checkFrequencia();
 	}
 	
 	@RequestMapping(value = "/list_pont_indicador", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody String resultIndicadoresPontualidadePorEmpresa(HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
-		String result = serviceIndicador.checkPontualidade();
-		return result;
+	public @ResponseBody String resultIndicadoresPontualidadePorEmpresa(
+			HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
+		return serviceIndicador.checkPontualidade();		
 	}
 	
 	@RequestMapping(value = "/list_limp_indicador", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody String resultIndicadoresLimpezaPorEmpresa(HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
-		String result = serviceIndicador.checkLimpeza();
-		return result;
+	public @ResponseBody String resultIndicadoresLimpezaPorEmpresa(
+			HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
+		return serviceIndicador.checkLimpeza();
 	}
 	
 	@RequestMapping(value = "/list_lota_indicador", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody String resultIndicadoresLotacaoPorEmpresa(HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
-		String result = serviceIndicador.checkLotacao();
-		return result;
+	public @ResponseBody String resultIndicadoresLotacaoPorEmpresa(
+			HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
+		return serviceIndicador.checkLotacao();
 	}
 	
 	@RequestMapping(value = "/list_cond_moto_indicador", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody String resultIndicadoresConducaoMotoristaPorEmpresa(HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
-		String result = serviceIndicador.checkConducaoMotorista();
-		return result;
+	public @ResponseBody String resultIndicadoresConducaoMotoristaPorEmpresa(
+			HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
+		return serviceIndicador.checkConducaoMotorista();
 	}
 	
 	@RequestMapping(value = "/list_cons_veic_indicador", method = RequestMethod.POST, produces = "application/json")
-	public @ResponseBody String resultIndicadoresConservacaoColetivoPorEmpresa(HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
-		String result = serviceIndicador.checkConservacaoColetivo();
-		return result;
+	public @ResponseBody String resultIndicadoresConservacaoColetivoPorEmpresa(
+			HttpServletRequest request, HttpServletResponse response) throws SQLDataException, JsonProcessingException {
+		return serviceIndicador.checkConservacaoColetivo();
 	}
 
 }

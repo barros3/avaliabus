@@ -43,18 +43,18 @@ public class AppWebConfiguration extends WebMvcConfigurerAdapter {
 		return resolver;
 	}
 	
-//	@Bean(name = "dataSource") public DriverManagerDataSource dataSource() {
-//		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
-////		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
-////		driverManagerDataSource.setUrl("jdbc:mysql://mysql:3306/sampledb");
-////		driverManagerDataSource.setUsername("goku");
-////		driverManagerDataSource.setPassword("uKrwbCEXNFtJ1gAo");
-//		
-//		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/avaliabus");
-//		driverManagerDataSource.setUsername("root");
-//		driverManagerDataSource.setPassword("");
-//		return driverManagerDataSource;
-//	}
+	@Bean(name = "dataSource") public DriverManagerDataSource dataSource() {
+		DriverManagerDataSource driverManagerDataSource = new DriverManagerDataSource();
+		driverManagerDataSource.setDriverClassName("com.mysql.jdbc.Driver");
+//		driverManagerDataSource.setUrl("jdbc:mysql://mysql:3306/sampledb");
+//		driverManagerDataSource.setUsername("goku");
+//		driverManagerDataSource.setPassword("uKrwbCEXNFtJ1gAo");
+		
+		driverManagerDataSource.setUrl("jdbc:mysql://localhost:3306/avaliabus");
+		driverManagerDataSource.setUsername("root");
+		driverManagerDataSource.setPassword("");
+		return driverManagerDataSource;
+	}
 	
 	@Bean(name = "multipartResolver") public CommonsMultipartResolver createMultipartResolver() {
 	    CommonsMultipartResolver resolver=new CommonsMultipartResolver();
